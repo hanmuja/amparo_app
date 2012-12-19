@@ -1,0 +1,24 @@
+.order_component_session{
+	border: 1px solid #D0D0D0;
+    margin: 15px 0;
+    padding: 5px;
+}
+
+.order_component_session .status{
+	font-weight: bold;
+}
+
+.order_component_session .comment{
+	margin: 5px;
+}
+
+.order_component_session .author{
+	border-top: 1px solid #E6E6E6;
+    color: #9A9A9A;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.description {
+	margin: 0 10px;
+}

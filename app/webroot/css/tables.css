@@ -1,0 +1,413 @@
+.promana
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	text-align: left;
+	border-collapse: collapse;
+}
+.promana th 
+{
+    background: none repeat scroll 0 0 #38A575;
+    border: 0 none;
+    color: white;
+    height: 30px;
+    text-align: center;
+}
+
+.promana th a {
+    color: white;
+    font-family: Tahoma;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 14px;
+    margin: 0 0 0 10px;
+    text-decoration: none;
+}
+
+.promana th a.desc:after {
+    content: " ⇡";
+}
+
+.promana th a.asc:after {
+    content: " ⇣";
+}
+
+.promana th input 
+{
+    border: 0 none;
+    height: 70%;
+}
+
+.promana td
+{
+	border-bottom: 1px solid #D2D2D2;
+    padding: 5px 10px;
+}
+
+.promana tr:hover td
+{
+	background: #E5F1F2;
+}
+
+.promana td.fila_paginador span.numero_resultados
+{
+	font-weight: bold;
+    margin: 0;
+}
+
+.promana td.fila_paginador
+{
+    border-bottom: 0 none;
+    height: 45px;
+    text-align: left;
+}
+
+.promana tr:hover td.fila_paginador
+{
+	background: transparent;
+	color: #333333;
+}
+
+.promana td.fila_paginador span.disabled
+{
+	visibility: hidden;
+}
+
+.promana td.fila_paginador span
+{
+	margin: 0 6px;
+	font-weight: bold;
+}
+
+.promana td.fila_paginador span a:hover
+{
+	text-decoration: underline;
+}
+
+.promana td.fila_paginador span.current
+{
+	background: none repeat scroll 0 0 #38A575;
+    border-radius: 3px 3px 3px 3px;
+    color: white;
+    margin: 0;
+    padding: 3px 5px;
+    text-decoration: underline;
+}
+
+.promana td a:hover
+{
+	text-decoration: underline;
+}
+
+.promana thead tr:first-child th:first-child
+{
+	border-radius: 5px 0 0 0;
+}
+
+.promana thead tr:first-child th:last-child
+{
+	border-radius: 0 5px 0 0;
+}
+
+.promana tbody tr td:first-child
+{
+	border-left: 1px solid #D2D2D2;
+}
+
+.promana tbody tr td:last-child
+{
+	border-right: 1px solid #D2D2D2;
+}
+
+.promana tbody tr:last-child td.fila_paginador
+{
+	border: 0;
+}
+
+
+
+/******************************************/
+/*****FIN PROMANA**************************/
+
+
+
+/************INICIA PROMANA HEAD BUTTON***/
+
+.promana-head-button
+{
+	text-align: left;
+	border-collapse: collapse;
+}
+.promana-head-button th 
+{
+    /*background-color: #9F1A1A;*/
+    background-color: #01034e;
+    color: white;
+    height: 20px;
+    text-align: left;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+    border: 0;
+	padding-left: 5px;
+}
+
+.promana-head-button th:hover 
+{
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+}
+
+
+/*Bordes arriba y abajo THEAD*/
+/*.promana-head-button thead tr:last-child th
+{
+	border-bottom: 1px solid #38A575;
+}
+.promana-head-button thead:hover tr:last-child th
+{
+	border-bottom: 1px solid #15764C;
+}
+
+.promana-head-button thead tr:first-child th
+{
+	border-top: 1px solid #38A575;
+}
+.promana-head-button thead:hover tr:first-child th
+{
+	border-top: 1px solid #15764C;
+}*/
+
+.promana-head-button thead tr:last-child th
+{
+	/*border-bottom: 1px solid #6E1212;*/
+	border-bottom: 1px solid black;
+	padding: 0 1px 3px 1px;
+	
+}
+
+.promana-head-button thead tr:first-child th
+{
+	border-top: 1px solid black;
+}
+
+/*Bordes arriba y abajo THEAD*/
+
+
+
+/*Bordes izquierdo y derecho THEAD*/
+/*.promana-head-button thead tr th:first-child
+{
+	border-left: 1px solid #38A575;
+}
+.promana-head-button thead:hover tr th:first-child
+{
+	border-left: 1px solid #15764C;
+}
+
+.promana-head-button thead tr th:last-child
+{
+	border-right: 1px solid #38A575;
+}
+.promana-head-button thead:hover tr th:last-child
+{
+	border-right: 1px solid #15764C;
+}*/
+
+.promana-head-button thead tr th:first-child
+{
+	border-left: 1px solid black;
+}
+.promana-head-button thead tr th:last-child
+{
+	border-right: 1px solid black;
+}
+/*FIN Bordes izquierdo y derecho THEAD*/
+
+
+/*
+.promana-head-button thead:hover tr:first-child th
+{
+	background-image: -moz-linear-gradient(center top , #38A575, #369E70);
+}
+
+.promana-head-button thead:hover tr:last-child th
+{
+	background-image: -moz-linear-gradient(center top , #369E70, #32946A);
+}*/
+
+.promana-head-button thead tr:first-child th
+{
+	/*background-image: -moz-linear-gradient(center top , #38A575, #369E70);*/
+	
+	padding: 0 0 0 5px;
+	/*background-color: #9F1A1A;
+   	background-image: -webkit-linear-gradient(top, #821111, #9F1A1A); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    /*background-image:    -moz-linear-gradient(top, #821111, #9F1A1A); /* FF3.6 */
+  	/*background-image:     -ms-linear-gradient(top, #821111, #9F1A1A); /* IE10 */
+  	/*background-image:      -o-linear-gradient(top, #821111, #9F1A1A); /* Opera 11.10+ */
+  	/*background-image:         linear-gradient(top, #821111, #9F1A1A);*/
+}
+
+.promana-head-button thead tr:last-child th
+{
+	/*background-image: -moz-linear-gradient(center top , #369E70, #32946A);*/
+	
+	/*background-color: #9F1A1A;
+   	background-image: -webkit-linear-gradient(top, #9F1A1A, #da1b1b); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    /*background-image:    -moz-linear-gradient(top, #9F1A1A, #da1b1b); /* FF3.6 */
+  	/*background-image:     -ms-linear-gradient(top, #9F1A1A, #da1b1b); /* IE10 */
+  	/*background-image:      -o-linear-gradient(top, #9F1A1A, #da1b1b); /* Opera 11.10+ */
+  	/*background-image:         linear-gradient(top, #9F1A1A, #da1b1b);*/
+}
+
+.promana-head-button thead tr:last-child th:first-child
+{
+	padding: 0 0 0 5px;
+}
+
+.promana-head-button th a {
+    /*color: white;*/
+   color: #ad8205;
+    font-weight: bold;
+    line-height: 14px;
+    text-decoration: none;
+}
+
+.promana-head-button th a.desc:after {
+    content: " ⇡";
+}
+
+.promana-head-button th a.asc:after {
+    content: " ⇣";
+}
+
+.promana-head-button th input 
+{
+    border: 0 none;
+	padding-left:15px;
+	height: 20px;
+}
+
+.promana-head-button td
+{
+	border-bottom: 1px solid #D2D2D2;
+    padding: 2px 5px;
+	border-right: 1px solid #f1f1f1;
+}
+
+/* tr for table content HOVER */
+.promana-head-button tr:hover td
+{
+	background-color:#f4f4f4;
+}
+
+.promana-head-button td.fila_paginador span.numero_resultados
+{
+	font-weight: bold;
+    margin: 0;
+}
+
+.promana-head-button td.fila_paginador
+{
+    border-bottom: 0 none;
+    height: 45px;
+    text-align: left;
+}
+
+.promana-head-button tr:hover td.fila_paginador
+{
+	background: transparent;
+	color: #333333;
+}
+
+.promana-head-button td.fila_paginador span.disabled
+{
+	visibility: hidden;
+}
+
+.promana-head-button td.fila_paginador span
+{
+	margin: 0 6px;
+	font-weight: bold;
+}
+
+.promana-head-button td.fila_paginador span a:hover
+{
+	text-decoration: underline;
+}
+
+.promana-head-button td.fila_paginador span.current
+{
+	background: none repeat scroll 0 0 #38A575;
+    border-radius: 3px 3px 3px 3px;
+    color: white;
+    margin: 0;
+    padding: 3px 5px;
+    text-decoration: underline;
+}
+
+.promana-head-button td a:hover
+{
+}
+
+.promana-head-button tbody tr td:first-child
+{
+	border-left: 1px solid #D2D2D2;
+}
+
+.promana-head-button tbody tr td:last-child
+{
+	border-right: 1px solid #D2D2D2;
+}
+
+.promana-head-button.pagination_row tbody tr:last-child td.fila_paginador
+{
+	border: 0;
+}
+
+.promana-head-button.no_header tbody tr:first-child td
+{
+	border-top: 1px solid #D2D2D2;
+}
+
+
+/************************************************/
+/****************FIN PROMANA HEAD BUTTON**************/
+
+
+td.units_col
+{
+	width: 40px;
+	padding-right: 10px;
+}
+
+td.date_needed_col
+{
+	width: 110px;
+}
+
+
+/*GENERICO*/
+
+td.actions
+{
+	text-align: left;
+}
+
+th a.asc:after 
+{
+    content: " ⇣";
+}
+
+th a.desc:after {
+    content: " ⇡";
+}
+
+th select.filter
+{
+	height: 20px;
+	border: none;
+}
+
+span.custom_table_highlight
+{
+	background: #FFFFA1;
+}

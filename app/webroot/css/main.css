@@ -1,0 +1,65 @@
+html, body {
+    color: #4F4F4F;
+    font-family: Arial,verdana,helvetica,arial;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+	height: 100%;
+	background-image: url('../img/bg_amparo_app.png');
+}
+
+h2 {
+	font-weight:bold;
+}
+
+h2 {
+	font-size: 150%;
+}
+
+h3 {
+	font-size: 120%;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+#flashMessage {
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 10px 3px 8px 35px;
+}
+
+#flashMessage.error {
+    background: url("../img/bwpx/icons/symbol_multiplication.gif") no-repeat scroll 10px center #FFE0E0;
+    border-color: #BD5353;
+    color: #BD5353;
+}
+
+#flashMessage.success {
+    background: url("../img/bwpx/icons/symbol_check.gif") no-repeat scroll 10px center #F2FFF2;
+    border-color: #558755;
+    color: #558755;
+}
+
+.yellow {
+	color:#ffff00;
+}
+
+.burgundy {
+	color:#9F1A1A;
+}
+
+.marg_bottom20 {
+	margin-bottom: 20px;
+}

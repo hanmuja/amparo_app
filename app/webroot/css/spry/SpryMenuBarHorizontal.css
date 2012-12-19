@@ -1,0 +1,284 @@
+@charset "UTF-8";
+
+/* SpryMenuBarHorizontal.css - Revision: Spry Preview Release 1.4 */
+
+/* Copyright (c) 2006. Adobe Systems Incorporated. All rights reserved. */
+
+/*******************************************************************************
+
+ LAYOUT INFORMATION: describes box model, positioning, z-order
+
+ *******************************************************************************/
+
+/* The outermost container of the Menu Bar, an auto width box */
+ul.MenuBarHorizontal
+{
+	margin-top: -2px;
+	padding: 0;
+	list-style-type: none;
+	font-size: 120%;
+	font-weight:bold;
+	cursor: default;
+	width: auto;
+	/*float: right;*/
+}
+/* Set the active Menu Bar with this class, currently setting z-index to accomodate IE rendering bug: http://therealcrisp.xs4all.nl/meuk/IE-zindexbug.html */
+ul.MenuBarActive
+{
+	z-index: 1000;
+}
+/* Menu item containers, position children relative to this container and are a fixed width */
+ul.MenuBarHorizontal li
+{
+	margin: 0 1px 0 1px;
+	padding: 0;
+	list-style-type: none;
+	font-size: 100%;
+	position: relative;
+	text-align: left;
+	cursor: pointer;
+	width: auto;
+	float: left;
+}
+
+/* Submenus should appear below their parent (top: 3px) with a higher z-index, but they are initially off the left side of the screen (-1000em) */
+ul.MenuBarHorizontal ul
+{
+	margin: 3px 0 0 -2px;
+	padding: 0;
+	list-style-type: none;
+	font-size: 100%;
+	z-index: 1020;
+	cursor: default;
+	position: absolute;
+	left: -1000em;
+	width:130px;
+}
+
+/* Submenu that is showing with class designation MenuBarSubmenuVisible, we set left to auto so it comes onto the screen below its parent menu item */
+ul.MenuBarHorizontal ul.MenuBarSubmenuVisible
+{
+	left: auto;
+}
+
+/* Menu item containers are same fixed width as parent */
+ul.MenuBarHorizontal ul li
+{
+	width: 100%;
+}
+
+/* Second Level Children Positioning */
+ul.MenuBarHorizontal ul ul
+{
+	position: absolute;
+	margin: 0 0 0 153px;
+}
+
+/* Submenu that is showing with class designation MenuBarSubmenuVisible, we set left to 0 so it comes onto the screen */
+ul.MenuBarHorizontal ul.MenuBarSubmenuVisible ul.MenuBarSubmenuVisible
+{
+	left: auto;
+	top: 0;
+}
+
+/*******************************************************************************
+
+ DESIGN INFORMATION: describes color scheme, borders, fonts
+
+ *******************************************************************************/
+
+/* Submenu containers (Items with children) */
+ul.MenuBarHorizontal ul
+{
+	border:none;
+	background-color:transparent;
+}
+
+/* All links in the Menu */
+ul.MenuBarHorizontal a
+{
+	display:block;
+	cursor:pointer;
+	padding:12px 7px 9px 7px;
+	color:#000000;
+	text-decoration:none;
+	background-color:#F2F2F2;
+}
+
+.multiplebgs ul.MenuBarHorizontal a /* apply with modernizr class ".multiplebgs", for CSS3 browsers */
+{
+	/*background-image:url(../../img/layout/out.jpg);*/
+	background-repeat:repeat-x;
+}
+
+ul.MenuBarHorizontal a:hover
+{
+	background-color:#cccccc;
+}
+
+.multiplebgs ul.MenuBarHorizontal a:hover /* apply with modernizr class ".multiplebgs", for CSS3 browsers */
+{
+	/*background-image:url(../../img/layout/over.jpg);*/
+	background-repeat:repeat-x;
+}
+
+/* Links that are First Level Parents - Children Open below */
+ul.MenuBarHorizontal a.MenuBarItemSubmenu
+{
+	background-color:#F2F2F2;
+	/*background-image: url(../../img/spry/SpryMenuBarDown.gif);*/
+	background-repeat: no-repeat;
+	background-position: 91% 53%;
+	padding-right:20px;
+}
+
+.multiplebgs ul.MenuBarHorizontal a.MenuBarItemSubmenu /* apply with modernizr class ".multiplebgs", for CSS3 browsers */
+{
+	/*background-image: url(../../img/spry/SpryMenuBarDown.gif), url(../../img/layout/out.jpg);*/
+	background-repeat: no-repeat, repeat-x;
+	background-position: 91% 50%, 0 0;
+}
+
+ul.MenuBarHorizontal a.MenuBarItemSubmenu:hover, ul.MenuBarHorizontal a.MenuBarSubmenuVisible
+{
+	background-color:#cccccc;
+	/*background-image: url(../../img/spry/SpryMenuBarDownHover.gif);*/
+}
+
+.multiplebgs ul.MenuBarHorizontal a.MenuBarItemSubmenu:hover, .multiplebgs ul.MenuBarHorizontal a.MenuBarSubmenuVisible /* apply with modernizr class ".multiplebgs", for CSS3 browsers */
+{
+	background-image: url(../../img/spry/SpryMenuBarDownHover.gif), url(../../img/layout/over.jpg);
+}
+
+/* Main Menu item for Current Page */
+ul.MenuBarHorizontal a.SelectedPage
+{
+	color:#ffffff;
+	text-decoration:none;
+	background-color:#990000;
+}
+
+.multiplebgs ul.MenuBarHorizontal a.SelectedPage /* apply with modernizr class ".multiplebgs", for CSS3 browsers */
+{
+	background-image:url(../../img/layout/selected.jpg);
+	background-repeat:repeat-x;
+}
+
+/* Main Menu item for Current Page that is a First Level Parent - Children Open below */
+ul.MenuBarHorizontal a.SelectedPageSubmenu
+{
+	/*background-image: url(../../img/spry/SpryMenuBarDownWhite.gif);*/
+	background-repeat: no-repeat;
+	background-position: 91% 50%;
+	/*background-color:#990000;*/
+	padding-right:20px;
+	color:black;
+}
+
+.multiplebgs ul.MenuBarHorizontal a.SelectedPageSubmenu /* apply with modernizr class ".multiplebgs", for CSS3 browsers */
+{
+	/*background-image: url(../../img/spry/SpryMenuBarDownWhite.gif), url(../../img/layout/selected.jpg);*/
+	background-repeat: no-repeat, repeat-x;
+	background-position: 91% 50%, 0 0;
+}
+
+ul.MenuBarHorizontal a.SelectedPageSubmenu:hover
+{
+	/*background-image: url(../../img/spry/SpryMenuBarDown.gif);*/
+	background-color:#990000;
+}
+
+.multiplebgs ul.MenuBarHorizontal a.SelectedPageSubmenu:hover /* apply with modernizr class ".multiplebgs", for CSS3 browsers */
+{
+	/*background-image: url(../../img/spry/SpryMenuBarDown.gif), url(../../img/layout/selected.jpg);*/
+}
+
+/* Children items */
+ul.MenuBarHorizontal ul a, .multiplebgs ul.MenuBarHorizontal ul a /* ALSO apply with modernizr class ".multiplebgs", for CSS3 browsers */
+{
+	width:140px;
+	background-image:none;
+	background-color:#F2F2F2;
+	color:#000000;
+	padding:7px 7px 7px 7px;
+	border-bottom:solid 1px #cccccc;
+}
+
+ul.MenuBarHorizontal ul a:hover, .multiplebgs ul.MenuBarHorizontal ul a:hover /* ALSO apply with modernizr class ".multiplebgs", for CSS3 browsers */
+{
+	background-image:none;
+	background-color:#666666;
+	color:#FFFFFF;
+}
+
+/* links that are Second Level Parents - Children Open to their right */
+ul.MenuBarHorizontal ul a.MenuBarItemSubmenu, .multiplebgs ul.MenuBarHorizontal ul a.MenuBarItemSubmenu /* ALSO apply with modernizr class ".multiplebgs", for CSS3 browsers */
+{
+	width:140px;
+	/*background-image: url(../../img/spry/SpryMenuBarRight.gif);*/
+	background-position: 95% 50%;
+	padding:7px 7px 7px 7px;
+	background-color:#F2F2F2;
+}
+
+ul.MenuBarHorizontal ul a.MenuBarItemSubmenu:hover, ul.MenuBarHorizontal ul a.MenuBarSubmenuVisible, .multiplebgs ul.MenuBarHorizontal ul a.MenuBarItemSubmenu:hover, .multiplebgs ul.MenuBarHorizontal ul a.MenuBarSubmenuVisible /* ALSO apply with modernizr class ".multiplebgs", for CSS3 browsers */
+{
+	/*background-image: url(../../img/spry/SpryMenuBarRightSelected.gif);*/
+	background-color:#666666;
+	color:#ffffff;
+}
+
+/* Grandchildren (Second Level Children) */
+ul.MenuBarHorizontal ul ul a, .multiplebgs ul.MenuBarHorizontal ul ul a /* ALSO apply with modernizr class ".multiplebgs", for CSS3 browsers */
+{
+	background-image:none;
+	padding:7px 7px 7px 7px;
+	background-color:#666;
+	color:#fff;
+	border-bottom:solid 1px #cccccc;
+}
+
+ul.MenuBarHorizontal ul ul a:hover, .multiplebgs ul.MenuBarHorizontal ul ul a:hover /* ALSO apply with modernizr class ".multiplebgs", for CSS3 browsers */
+{
+	background-color:#990000;
+}
+
+/* Used on Username */
+ul.MenuBarHorizontal a.user_nav, .multiplebgs ul.MenuBarHorizontal a.user_nav /* ALSO apply with modernizr class ".multiplebgs", for CSS3 browsers */
+{
+	color:#990000;
+	background-color:transparent;
+	padding-right:12px;
+	/*background:url(../../img/spry/SpryMenuBarDown.gif);*/
+	background-repeat:no-repeat;
+	background-position:center right;
+}
+
+ul.MenuBarHorizontal a.user_nav:hover, .multiplebgs ul.MenuBarHorizontal a.user_nav:hover /* ALSO apply with modernizr class ".multiplebgs", for CSS3 browsers */
+{
+	color:#000000;
+	background-color:transparent;
+	/*background-image:url(../../img/spry/SpryMenuBarDownHover.gif);*/
+}
+
+/*******************************************************************************
+
+ BROWSER HACKS: the hacks below should not be changed unless you are an expert
+
+ *******************************************************************************/
+
+/* HACK FOR IE: to make sure the sub menus show above form controls, we underlay each submenu with an iframe */
+ul.MenuBarHorizontal iframe
+{
+	position: absolute;
+	z-index: 1010;
+}
+/* HACK FOR IE: to stabilize appearance of menu items; the slash in float is to keep IE 5.0 from parsing */
+@media screen, projection
+{
+	ul.MenuBarHorizontal li.MenuBarItemIE
+	{
+		display: inline;
+		f\loat: left;
+	}
+}

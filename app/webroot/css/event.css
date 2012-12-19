@@ -1,0 +1,82 @@
+.event_date
+{
+  color: blue;
+}
+
+.colors_blue
+{
+    background-color: #c7e2fe;
+}
+
+.colors_red
+{
+    background-color: #fec7c7;
+}
+
+.colors_yellow
+{
+    background-color: #fefbc7;
+}
+
+.colors_green
+{
+    background-color: #cffec7;
+}
+
+.colors_black
+{
+    background-color: #d0d0d0;
+}
+
+span.posted {
+	background-color: #990;
+}
+
+span.invited {
+	background-color: #360;
+}
+
+span.not_invited {
+	background-color: #900;
+}
+
+.table_groups_users td
+{
+  color: #222222;
+  font-size: 95%;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+.td_title_table_groups_users
+{
+  border-bottom: 1px solid #7C7C7C;
+}
+
+.list_groups
+{
+  float: left;
+  width: 100%;
+}
+
+.list_groups div
+{
+  float: left;
+  width: 120px;
+}
+
+.list_groups label
+{
+  display: inline;
+  padding-left: 5px;
+}
+
+.list_groups input
+{
+  display: inline;
+}
+
+#show_one_content ul
+{
+  list-style: inside;
+}

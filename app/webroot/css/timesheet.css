@@ -1,0 +1,176 @@
+#checkin_checkout
+{
+  padding: 10px 10px 0 10px;
+  display: inline-block;
+
+}
+
+#checkin_checkout > div 
+{
+  padding: 10px 10px 0 10px;
+  display: inline-block;
+
+}
+
+#additionals > div
+{
+  padding: 10px;
+  display: inline-block;
+}
+
+#closed_notice {
+    color: #ffffff;
+    font-weight: bold;
+    height: 15px;
+    line-height: 15px;
+    margin: 6px 0;
+    text-align: center;
+        padding: 5px;
+        
+        background-color: #1262ac;
+        background-image: -webkit-linear-gradient(left, #ffffff, #1262ac, #1262ac, #ffffff); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(left, #ffffff, #1262ac, #1262ac, #ffffff); /* FF3.6 */
+        background-image:     -ms-linear-gradient(left, #ffffff, #1262ac, #1262ac, #ffffff); /* IE10 */
+        background-image:      -o-linear-gradient(left, #ffffff, #1262ac, #1262ac, #ffffff); /* Opera 11.10+ */
+        background-image:         linear-gradient(left, #ffffff, #1262ac, #1262ac, #ffffff);
+    
+    -webkit-border-radius: 3px; /* Saf3-4, iOS 1-3.2, Android <e;1.6 */
+    -moz-border-radius: 3px; /* FF1-3.6 */
+    border-radius: 3px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+}
+
+#closed_notice2 {
+    color: #ffffff;
+    font-weight: bold;
+    height: 15px;
+    line-height: 15px;
+    margin: 6px 0;
+    text-align: center;
+        padding: 5px;
+        
+        background-color: red;
+        background-image: -webkit-linear-gradient(left, #ffffff, red, red, #ffffff); /* Chrome 10+, Saf5.1+, iOS 5+ */
+        background-image:    -moz-linear-gradient(left, #ffffff, red, red, #ffffff); /* FF3.6 */
+        background-image:     -ms-linear-gradient(left, #ffffff, red, red, #ffffff); /* IE10 */
+        background-image:      -o-linear-gradient(left, #ffffff, red, red, #ffffff); /* Opera 11.10+ */
+        background-image:         linear-gradient(left, #ffffff, red, red, #ffffff);
+    
+    -webkit-border-radius: 3px; /* Saf3-4, iOS 1-3.2, Android <e;1.6 */
+    -moz-border-radius: 3px; /* FF1-3.6 */
+    border-radius: 3px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+}
+
+.float_right
+{
+  text-align: right;
+}
+
+.td_description {
+    background: none repeat scroll 0 0 white;
+    border: 1px solid #B9BCC3;
+    border-right: 3px solid #B9BCC3;
+    width: 48%;
+    
+    -webkit-border-radius: 0 10px 10px 0; /* Saf3-4, iOS 1-3.2, Android <e;1.6 */
+    -moz-border-radius: 0 10px 10px 0; /* FF1-3.6 */
+    border-radius: 0 10px 10px 0; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+    padding: 10px;
+}
+
+.bold
+{
+  color: black;
+  font-weight: bold;
+}
+
+.three_column
+{
+  display: inline-block;
+    padding: 10px;
+    width: auto;
+}
+
+.individual_reports_day
+{
+  padding: 0;
+}
+
+.individual_reports_day table
+{
+  width: 100%;
+}
+
+.individual_reports_day > table > tbody > tr > td
+{
+  border: 1px solid #D2D2D2;
+}
+
+.individual_reports_day table table > tbody > tr > td
+{
+  padding: 1px 5px;
+}
+
+.hours_per_location
+{
+  padding: 0;
+}
+
+.hours_per_location table
+{
+  width: 100%;
+}
+
+.hours_per_location > table > tbody > tr > td
+{
+  border: 1px solid #D2D2D2;
+}
+
+.hours_per_location table table > tbody > tr > td
+{
+  padding: 1px 5px;
+}
+
+.user_arrows form {
+    display: inline-block;
+    padding: 5px;
+	padding-top: 0;
+}
+
+.left_drop
+{
+  float: left;
+}
+
+#DayIndividualReportsForm form
+{
+  display: -moz-inline-stack;
+    padding: 5px;
+    width: 50%;
+}
+
+.user_arrows
+{
+  float: right;
+  text-align: right;
+}
+
+.clockin
+{
+	color: #090;
+}
+
+.clockout
+{
+	color: #900;
+}
+
+.bold_130
+{
+	font-weight:bold;
+	font-size:130%;
+}
+
+.texto_confirm_pass_finalize
+{
+  padding: 5px;
+}

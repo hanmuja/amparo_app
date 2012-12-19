@@ -1,0 +1,204 @@
+.input label
+{
+	font-weight:bold;
+	display: table-cell;
+	padding: 0 10px 0 0;
+}
+
+.ident_level_2 label
+{
+	padding-left: 40px;
+}
+
+.identation_level_2 input
+{
+	margin-left: 40px;
+}
+
+.input span.helptext
+{
+	font-size: 11px;
+	font-weight: bold;
+	color: #828282;
+	display: block;
+}
+
+.required label
+{
+	background: url(../img/varios/asterisco.png) no-repeat scroll right transparent;
+}
+
+input[type="text"], input[type="password"], input[type="number"], select
+{
+	border-radius: 5px 0 5px 0;
+	
+    border: 1px solid gray;
+    height: 20px;
+    padding: 2px;
+    display: table-cell;
+}
+
+.error input[type="text"], .error input[type="password"], .error select, .error textarea
+{
+	border-color: #D63921;
+}
+
+input[type="file"]
+{
+	display:block;
+}
+
+select
+{
+	height: 22px;
+	font-size: 12px;
+}
+
+div.input
+{
+	padding: 3px;
+}
+
+div.input, div.submit, div.boton
+{
+	margin: 5px;
+	display: table-row;
+}
+
+.input textarea
+{
+	border-radius: 3px;
+
+    border: 1px solid gray;
+    padding: 2px;
+    display: table-cell;
+}
+
+div.input.focused
+{
+	background: #E0E0E0;
+}
+
+div.input.focused.error
+{
+	background: #EDD3D3;
+}
+
+div.input.error
+{
+}
+
+/*input[type="submit"], button
+{
+    border: 0;
+	background: #38A575;
+    color: white;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 6px 7px;
+    border: 1px solid #38A575;
+    cursor: pointer;
+}*/
+
+/*input[type="submit"]:hover, button:hover
+{
+	border: 1px solid #6B6B6B;
+}*/
+
+div.campo_fijo
+{
+	font-size: 14px;
+	padding: 6px 2px 6px;
+}
+
+.error-message
+{
+	background: url("../img/form/error_left.png") no-repeat scroll 8px center transparent;
+    border-radius: 5px 5px 5px 5px;
+    color: white;
+    display: table-cell;
+    margin-left: 10px;
+    padding: 0 15px 0 30px;
+    vertical-align: middle;
+}
+
+div.files_group
+{
+    display: block;
+    float: left;
+    position: relative;
+    border: 1px solid #D6D6D6;
+    margin: 2px;
+}
+
+form .required label:after 
+{
+	color: #e32;
+	content: ' *';
+	display:inline;
+}
+
+.form_section
+{
+	background: url("../img/form/fugue_application-form.png") no-repeat scroll 3px center #9AC9B4;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 4px 22px;
+}
+
+.login_form .input
+{
+	display: inline-block;
+	float: left;
+}
+
+.login_form .input label
+{
+	font-size: 15px;
+}
+
+.login_form .input a
+{
+	display: block;
+}
+
+.login_form .submit
+{
+	display: inline-block;
+	float: left;
+	padding-top: 25px;
+}
+
+.ckeditor_container label
+{
+	font-size: 13px;
+    font-weight: bold;
+    padding: 0 20px 5px 0;
+    display: block;
+}
+
+.remember_passwd
+{
+	display: block;
+	font-weight: bold;
+}
+
+.route_cb
+{
+	border-top: 1px solid #C7C7C7;
+}
+
+.checkbox_list_container{
+	
+}
+
+.checkbox_list_container input[type="checkbox"]{
+	
+}
+
+.checkbox_list_container label{
+	display: inline-block;
+    margin: 5px 0 6px;
+    font-weight: bold;
+}

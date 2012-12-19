@@ -1,0 +1,362 @@
+.input label
+{
+	color: #222222;
+    display: block;
+    font-size: 95%;
+    font-weight: bold;
+    line-height: 150%;
+    margin: 0;
+    padding: 0 0 3px;
+}
+
+.ident_level_2 label
+{
+	padding-left: 40px;
+}
+
+.identation_level_2 input
+{
+	margin-left: 40px;
+}
+
+.input span.helptext
+{
+	font-size: 11px;
+	font-weight: bold;
+	color: #828282;
+	display: block;
+}
+
+.required label
+{
+	/*background: url(../img/varios/asterisco.png) no-repeat scroll right transparent;*/
+}
+
+input[type="text"], input[type="password"], input[type="number"], select, textarea
+{
+	/*background: url("../img/form/fieldbg.gif") repeat-x scroll center top #FFFFFF;*/
+    border-color: #7C7C7C #C3C3C3 #DDDDDD;
+    border-style: solid;
+    border-width: 1px;
+    padding: 2px;
+	height: 15px;
+}
+
+textarea
+{
+	height: 60px;
+}
+
+.full_input
+{
+	width: 99%;
+}
+
+.set_size_input
+{
+	width: 300px;
+}
+
+.half_input
+{
+	width: 49%;
+}
+
+.finalized
+{
+    color: #000000;
+}
+
+.created
+{
+    color: #FF0000;
+}
+
+.empty
+{
+    color: #090;
+}
+
+.error input[type="number"], .error input[type="text"], .error input[type="password"], .error select, .error textarea
+{
+	border-color: #D63921;
+}
+
+input[type="file"]
+{
+	display: block;
+}
+
+select
+{
+	height: 22px;
+	font-size: 12px;
+}
+
+.multiple select
+{
+  height: 200px;
+  min-width: 200px;
+}
+
+div.input, div.submit, div.boton
+{
+	padding: 6px 0;
+}
+
+div.input.focused
+{
+	background: #E0E0E0;
+}
+
+div.input.focused.error
+{
+	background: #EDD3D3;
+}
+
+div.input.error
+{
+}
+
+.two_column{
+	display: inline-block;
+}
+
+/*input[type="submit"], button
+{
+    border: 0;
+	background: #38A575;
+    color: white;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 6px 7px;
+    border: 1px solid #38A575;
+    cursor: pointer;
+}*/
+
+/*input[type="submit"]:hover, button:hover
+{
+	border: 1px solid #6B6B6B;
+}*/
+
+div.campo_fijo
+{
+	font-size: 14px;
+	padding: 6px 2px 6px;
+}
+
+.error-message
+{
+	color: #DD2121;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+div.files_group
+{
+    display: block;
+    float: left;
+    position: relative;
+    border: 1px solid #D6D6D6;
+    margin: 2px;
+}
+
+form .required label:after 
+{
+	color: #e32;
+	content: ' *';
+	display:inline;
+}
+
+.form_section
+{
+	background: #ccc;
+    color: #333;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 4px 15px;
+	margin-top: 15px;
+}
+
+.login_form .input
+{
+	display: inline-block;
+	float: left;
+}
+
+.login_form .input label
+{
+	font-size: 15px;
+}
+
+.login_form .input a
+{
+	display: block;
+}
+
+.login_form .submit
+{
+	display: inline-block;
+	float: left;
+	padding-top: 25px;
+}
+
+.ckeditor_container label
+{
+	font-size: 13px;
+    font-weight: bold;
+    padding: 0 20px 5px 0;
+    display: block;
+}
+
+.remember_passwd
+{
+	display: block;
+	font-weight: bold;
+}
+
+.route_cb
+{
+	border-top: 1px solid #C7C7C7;
+}
+
+.route_cb_hd
+{
+	border-top: 1px solid #C7C7C7;
+	border-bottom: 1px solid #C7C7C7;
+	min-height: 30px;
+	margin-bottom: 5px;
+	margin-top: 15px;
+	padding-bottom:50px;
+}
+
+.route_checkbox
+{
+	display: inline;
+}
+
+.route_checkbox_label
+{
+	display: inline;
+	padding-left:10px;
+}
+
+.checkbox_list_container{
+	
+}
+
+.checkbox_list_container input[type="checkbox"]{
+	
+}
+
+.checkbox_list_container label{
+	display: inline-block;
+    margin: 5px 0 6px;
+    font-weight: bold;
+}
+
+fieldset{
+	border: medium none;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+legend{
+	border: medium none;
+    color: #222222;
+    display: block;
+    font-size: 95%;
+    font-weight: bold;
+    line-height: 150%;
+    margin: 0;
+    padding: 0 0 3px;
+    white-space: normal;
+    width: 100%;
+}
+
+.checkbox label, .radio label{
+	font-size: 100%;
+    margin: -17px 0 0 23px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    display: block;
+    height: 13px;
+    margin: 4px 0 0;
+    padding: 0;
+    width: 13px;
+}
+
+.div-row{
+	padding: 2px 0;
+}
+
+.div-row .input{
+	padding: 6px 0 0 0;
+}
+
+.form_section_body{
+	border: 0px solid #9AC9B4;
+    padding: 0 0 15px 0;
+}
+
+fieldset label{
+	color: #222222;
+    display: block;
+    font-size: 100%;
+    line-height: 150%;
+    margin: -17px 0 0 23px;
+    padding: 0 0 5px;
+    width: 88%;
+}
+
+.three_column
+{
+  width: 30%;
+}
+
+optgroup[label='Retired'] option
+{
+color: #999;
+}
+
+div.hour
+{
+/*   border: solid; */
+}
+
+.template_name
+{
+  color: #222222;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.check_inline input
+{
+  display: inline;
+}
+
+.check_inline label
+{
+  display: inline;
+  padding-left: 5px;
+}
+
+.radio label
+{
+  margin: 0 10px 0 0;
+}
+
+.help
+{
+    color: gray;
+    font-size: 0.9em;
+    font-weight: normal;
+}
+
+.margin_both_sides
+{
+	margin: 0 10px;
+}

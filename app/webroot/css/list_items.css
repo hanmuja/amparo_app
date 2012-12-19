@@ -1,0 +1,27 @@
+div.item_box
+{
+	background: url("../img/misc/sortable.png") no-repeat scroll 0 center white;
+    border: 1px dashed #E8E8E8;
+    height: 22px;
+    line-height: 22px;
+    margin: 5px 0;
+    padding: 3px 3px 3px 25px;
+}
+
+.item_label
+{
+	display: inline-block;
+}
+
+.item_label input
+{
+	border: 1px solid #CACACA;
+    padding: 0;
+    width: 250px;
+}
+
+.item_buttons
+{
+	float: right;
+}
+

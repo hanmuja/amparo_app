@@ -1,0 +1,418 @@
+.sc_button
+{
+    border: 1px solid transparent;
+    
+    -webkit-border-radius: 5px; /* Saf3-4, iOS 1-3.2, Android <e;1.6 */
+    -moz-border-radius: 5px; /* FF1-3.6 */
+    border-radius: 5px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+    
+    color: white;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+.sc_button_small
+{
+    font-size: 10px;
+    height: 15px;
+    line-height: 15px;
+}
+
+.sc_button_image_22
+{
+    height: 22px;
+    line-height: 22px;
+}
+
+.sc_button_image_16
+{
+    height: 16px;
+    line-height: 16px;
+}
+
+.sc_button *
+{
+	display: inline-block;
+}
+
+.sc_button:hover
+{
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); /* FF3.5 - 3.6 */
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
+	
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+}
+
+.sc_button.plane:hover
+{
+	-webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+	
+    text-shadow: none;
+}
+
+
+.sc_button_yellow
+{
+	background-color: #EDD731;
+   	background-image: -webkit-linear-gradient(top, #F5DD27, #EDD731); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, #F5DD27, #EDD731); /* FF3.6 */
+  	background-image:     -ms-linear-gradient(top, #F5DD27, #EDD731); /* IE10 */
+  	background-image:      -o-linear-gradient(top, #F5DD27, #EDD731); /* Opera 11.10+ */
+  	background-image:         linear-gradient(top, #F5DD27, #EDD731);
+	color: #555;
+}
+.sc_button_yellow:hover
+{
+	background-color: #E0CD38;
+	background-image: -webkit-linear-gradient(top, #F5DD27, #E0CD38); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, #F5DD27, #E0CD38); /* FF3.6 */
+  	background-image:     -ms-linear-gradient(top, #F5DD27, #E0CD38); /* IE10 */
+  	background-image:      -o-linear-gradient(top, #F5DD27, #E0CD38); /* Opera 11.10+ */
+  	background-image:         linear-gradient(top, #F5DD27, #E0CD38);
+	
+	border-color: #D2BF31; 
+}
+
+.sc_button_blue
+{
+	background-color: #5F83B9;
+	background-image: -webkit-linear-gradient(top, #6990CC, #5F83B9); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, #6990CC, #5F83B9); /* FF3.6 */
+  	background-image:     -ms-linear-gradient(top, #6990CC, #5F83B9); /* IE10 */
+  	background-image:      -o-linear-gradient(top, #6990CC, #5F83B9); /* Opera 11.10+ */
+  	background-image:         linear-gradient(top, #6990CC, #5F83B9);
+}
+.sc_button_blue:hover
+{
+	background-color: #51719E;
+	background-image: -webkit-linear-gradient(top, #6990CC, #51719E); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, #6990CC, #51719E); /* FF3.6 */
+  	background-image:     -ms-linear-gradient(top, #6990CC, #51719E); /* IE10 */
+  	background-image:      -o-linear-gradient(top, #6990CC, #51719E); /* Opera 11.10+ */
+  	background-image:         linear-gradient(top, #6990CC, #51719E);
+	
+	border-color: #5171A1; 
+}
+
+
+.sc_button_red
+{
+	background-color: #E75F53;
+	background-image: -webkit-linear-gradient(top, #F56558, #E75F53); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, #F56558, #E75F53); /* FF3.6 */
+  	background-image:     -ms-linear-gradient(top, #F56558, #E75F53); /* IE10 */
+  	background-image:      -o-linear-gradient(top, #F56558, #E75F53); /* Opera 11.10+ */
+  	background-image:         linear-gradient(top, #F56558, #E75F53);
+}
+.sc_button_red:hover
+{
+	background-color: #C95348;
+	background-image: -webkit-linear-gradient(top, #F56558, #C95348); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, #F56558, #C95348); /* FF3.6 */
+  	background-image:     -ms-linear-gradient(top, #F56558, #C95348); /* IE10 */
+  	background-image:      -o-linear-gradient(top, #F56558, #C95348); /* Opera 11.10+ */
+  	background-image:         linear-gradient(top, #F56558, #C95348);
+	
+	border-color: #A1423A; 
+}
+
+
+.sc_button_red_arcade
+{
+	background-color: #821111;
+	background-image: -webkit-linear-gradient(top, #821111, #8D1010); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, #821111, #8D1010); /* FF3.6 */
+  	background-image:     -ms-linear-gradient(top, #821111, #8D1010); /* IE10 */
+  	background-image:      -o-linear-gradient(top, #821111, #8D1010); /* Opera 11.10+ */
+  	background-image:         linear-gradient(top, #821111, #8D1010);
+}
+.sc_button_red_arcade:hover
+{
+	background-color: #821111;
+	background-image: -webkit-linear-gradient(top, #821111, #A72323); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, #821111, #A72323); /* FF3.6 */
+  	background-image:     -ms-linear-gradient(top, #821111, #A72323); /* IE10 */
+  	background-image:      -o-linear-gradient(top, #821111, #A72323); /* Opera 11.10+ */
+  	background-image:         linear-gradient(top, #821111, #A72323);
+	
+	border-color: #A1423A; 
+}
+
+
+.sc_button_green
+{
+	background-color: #6BA850;
+	background-image: -webkit-linear-gradient(top, #74B557, #6BA850); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, #74B557, #6BA850); /* FF3.6 */
+  	background-image:     -ms-linear-gradient(top, #74B557, #6BA850); /* IE10 */
+  	background-image:      -o-linear-gradient(top, #74B557, #6BA850); /* Opera 11.10+ */
+  	background-image:         linear-gradient(top, #74B557, #6BA850);
+}
+.sc_button_green:hover
+{
+	background-color: #609648;
+	background-image: -webkit-linear-gradient(top, #74B557, #609648); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, #74B557, #609648); /* FF3.6 */
+  	background-image:     -ms-linear-gradient(top, #74B557, #609648); /* IE10 */
+  	background-image:      -o-linear-gradient(top, #74B557, #609648); /* Opera 11.10+ */
+  	background-image:         linear-gradient(top, #74B557, #609648);
+	
+	border-color: #59933E; 
+}
+
+
+.sc_button_burgundy
+{
+        background-color: #990000;
+        background-image: -webkit-linear-gradient(top, #ad0000, #990000); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    	background-image:    -moz-linear-gradient(top, #ad0000, #990000); /* FF3.6 */
+        background-image:     -ms-linear-gradient(top, #ad0000, #990000); /* IE10 */
+        background-image:      -o-linear-gradient(top, #ad0000, #990000); /* Opera 11.10+ */
+        background-image:         linear-gradient(top, #ad0000, #990000);
+}
+.sc_button_burgundy:hover
+{
+        background-color: #990000;
+        background-image: -webkit-linear-gradient(top, #990000, #820000); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    	background-image:    -moz-linear-gradient(top, #990000, #820000); /* FF3.6 */
+        background-image:     -ms-linear-gradient(top, #990000, #820000); /* IE10 */
+        background-image:      -o-linear-gradient(top, #990000, #820000); /* Opera 11.10+ */
+        background-image:         linear-gradient(top, #990000, #820000);
+        
+        border-color: #640000; 
+}
+
+.sc_button_plane
+{
+	border-color: rgba(0, 0, 0, 0.1);
+    color: #444444;
+    text-shadow: none;
+    background: none repeat scroll 0 0 white;
+}
+
+.sc_button_gray
+{
+	background-color: transparent;
+    background-image: -webkit-linear-gradient(top, #F5F5F5, #F1F1F1); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, #F5F5F5, #F1F1F1); /* FF3.6 */
+  	background-image:     -ms-linear-gradient(top, #F5F5F5, #F1F1F1); /* IE10 */
+  	background-image:      -o-linear-gradient(top, #F5F5F5, #F1F1F1); /* Opera 11.10+ */
+  	background-image:         linear-gradient(top, #F5F5F5, #F1F1F1);
+  	
+    border-color: rgba(0, 0, 0, 0.1);
+    color: #444444;
+    text-shadow: none;
+}
+
+.sc_button_gray:hover
+{
+	background-color: transparent;
+	background-image: -webkit-linear-gradient(top, #F8F8F8, #F1F1F1); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, #F8F8F8, #F1F1F1); /* FF3.6 */
+  	background-image:     -ms-linear-gradient(top, #F8F8F8, #F1F1F1); /* IE10 */
+  	background-image:      -o-linear-gradient(top, #F8F8F8, #F1F1F1); /* Opera 11.10+ */
+  	background-image:         linear-gradient(top, #F8F8F8, #F1F1F1);
+	
+	border-color: #C6C6C6;
+	color: black;
+	text-shadow: none; 
+}
+
+.sc_button_gray_arcade
+{
+	background-color: transparent;
+    background-image: -webkit-linear-gradient(top, #F5F5F5, #F1F1F1); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, #F5F5F5, #F1F1F1); /* FF3.6 */
+  	background-image:     -ms-linear-gradient(top, #F5F5F5, #F1F1F1); /* IE10 */
+  	background-image:      -o-linear-gradient(top, #F5F5F5, #F1F1F1); /* Opera 11.10+ */
+  	background-image:         linear-gradient(top, #F5F5F5, #F1F1F1);
+  	
+    border-color: rgba(0, 0, 0, 0.1);
+    color: #444444;
+    text-shadow: none;
+}
+
+.sc_button_gray_arcade:hover
+{
+	background-color: transparent;
+	background-image: -webkit-linear-gradient(top, #F8F8F8, #F1F1F1); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, #F8F8F8, #F1F1F1); /* FF3.6 */
+  	background-image:     -ms-linear-gradient(top, #F8F8F8, #F1F1F1); /* IE10 */
+  	background-image:      -o-linear-gradient(top, #F8F8F8, #F1F1F1); /* Opera 11.10+ */
+  	background-image:         linear-gradient(top, #F8F8F8, #F1F1F1);
+	
+	border-color: #C6C6C6;
+	color: black;
+	text-shadow: none; 
+}
+
+.fade_text
+{
+	color:#999;
+}
+
+.MenuBarItemSubmenu.sc_button_gray_arcade
+{
+	background-image: url(../img/spry/SpryMenuBarDown.gif),-webkit-linear-gradient(top, #F8F8F8, #F1F1F1); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image: url(../img/spry/SpryMenuBarDown.gif),   -moz-linear-gradient(top, #F8F8F8, #F1F1F1); /* FF3.6 */
+  	background-image: url(../img/spry/SpryMenuBarDown.gif),    -ms-linear-gradient(top, #F8F8F8, #F1F1F1); /* IE10 */
+  	background-image: url(../img/spry/SpryMenuBarDown.gif),     -o-linear-gradient(top, #F8F8F8, #F1F1F1); /* Opera 11.10+ */
+  	background-image: url(../img/spry/SpryMenuBarDown.gif),        linear-gradient(top, #F8F8F8, #F1F1F1);
+  	
+  	background-position: 96% center, center center;
+    background-repeat: no-repeat;
+    padding-right: 17px;
+}
+
+.MenuBarItemSubmenu.sc_button_red_arcade.SelectedPage
+{
+	background-image: url(../img/spry/SpryMenuBarDownWhite.gif),-webkit-linear-gradient(top, #821111, #8D1010); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image: url(../img/spry/SpryMenuBarDownWhite.gif),   -moz-linear-gradient(top, #821111, #8D1010); /* FF3.6 */
+  	background-image: url(../img/spry/SpryMenuBarDownWhite.gif),    -ms-linear-gradient(top, #821111, #8D1010); /* IE10 */
+  	background-image: url(../img/spry/SpryMenuBarDownWhite.gif),     -o-linear-gradient(top, #821111, #8D1010); /* Opera 11.10+ */
+  	background-image: url(../img/spry/SpryMenuBarDownWhite.gif),        linear-gradient(top, #821111, #8D1010);
+  	
+  	background-position: 96% center, center center;
+    background-repeat: no-repeat;
+    padding-right: 17px;
+}
+
+
+.sc_button_gray_light
+{
+	background-color: transparent;
+    background-image: -webkit-linear-gradient(top, #FCFCFC, white); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, #FCFCFC, white); /* FF3.6 */
+  	background-image:     -ms-linear-gradient(top, #FCFCFC, white); /* IE10 */
+  	background-image:      -o-linear-gradient(top, #FCFCFC, white); /* Opera 11.10+ */
+  	background-image:         linear-gradient(top, #FCFCFC, white);
+    
+    border-color: rgba(0, 0, 0, 0.1);
+    color: #444444;
+    text-shadow: none;
+}
+.sc_button_gray_light:hover
+{
+	background-color: transparent;
+	background-image: -webkit-linear-gradient(top, #F8F8F8, #F1F1F1); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, #F8F8F8, #F1F1F1); /* FF3.6 */
+  	background-image:     -ms-linear-gradient(top, #F8F8F8, #F1F1F1); /* IE10 */
+  	background-image:      -o-linear-gradient(top, #F8F8F8, #F1F1F1); /* Opera 11.10+ */
+  	background-image:         linear-gradient(top, #F8F8F8, #F1F1F1);
+	
+	border-color: #C6C6C6;
+	color: black;
+	text-shadow: none; 
+}
+
+
+.sc_check_table_head_button
+{
+	display: inline-block;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+	
+	background-color: transparent;
+    background-image: -webkit-linear-gradient(top, #FCFCFC, white); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, #FCFCFC, white); /* FF3.6 */
+  	background-image:     -ms-linear-gradient(top, #FCFCFC, white); /* IE10 */
+  	background-image:      -o-linear-gradient(top, #FCFCFC, white); /* Opera 11.10+ */
+  	background-image:         linear-gradient(top, #FCFCFC, white);
+    
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #444444;
+    text-shadow: none;
+    padding: 0 5px;
+}
+
+.sc_check_table_head_button.ct_hover
+{
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); /* FF3.5 - 3.6 */
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
+	
+	background-color: transparent;
+	background-image: -webkit-linear-gradient(top, #F8F8F8, #F1F1F1); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, #F8F8F8, #F1F1F1); /* FF3.6 */
+  	background-image:     -ms-linear-gradient(top, #F8F8F8, #F1F1F1); /* IE10 */
+  	background-image:      -o-linear-gradient(top, #F8F8F8, #F1F1F1); /* Opera 11.10+ */
+  	background-image:         linear-gradient(top, #F8F8F8, #F1F1F1);
+  	
+	border-color: #C6C6C6;
+	color: black;
+	text-shadow: none; 
+}
+
+button.sc_button, input[type="submit"]
+{
+	height: auto;
+	line-height: normal;
+	padding: 6px 3px;
+}
+
+.sc_button img
+{
+	border: 0;
+}
+
+.sc_button.session_action
+{
+	height: 22px;
+	line-height: 22px;
+	background-color:#f4f4f4;
+}
+
+.sc_button.session_action_white
+{
+	height: 22px;
+	line-height: 22px;
+	background-color:#ffffff;
+	padding: 0 5px;
+	color: #990000;
+}
+
+.session_action > *
+{
+	padding: 0 5px;
+}
+
+.sc_button_confidential
+{
+	background-color: #E75F53;
+	background-image: -webkit-linear-gradient(top, #F56558, #E75F53); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, #F56558, #E75F53); /* FF3.6 */
+  	background-image:     -ms-linear-gradient(top, #F56558, #E75F53); /* IE10 */
+  	background-image:      -o-linear-gradient(top, #F56558, #E75F53); /* Opera 11.10+ */
+  	background-image:         linear-gradient(top, #F56558, #E75F53);
+}
+
+.sc_button_opening
+{
+	background-color: #EDD731;
+   	background-image: -webkit-linear-gradient(top, #F5DD27, #EDD731); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, #F5DD27, #EDD731); /* FF3.6 */
+  	background-image:     -ms-linear-gradient(top, #F5DD27, #EDD731); /* IE10 */
+  	background-image:      -o-linear-gradient(top, #F5DD27, #EDD731); /* Opera 11.10+ */
+  	background-image:         linear-gradient(top, #F5DD27, #EDD731);
+}
+
+.link.sc_button_shortcut.sorting{
+	cursor: move;
+}
+
+.link.sc_button_shortcut > .crud_button_inner{
+	cursor: pointer;
+}
+
+.sc_button.save_order{
+	display: none;
+}

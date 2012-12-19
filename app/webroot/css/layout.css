@@ -1,0 +1,487 @@
+/* Botones del crud */
+.crud_buttons 
+{
+    margin: 7px 0 4px;
+}
+
+.crud_button_group 
+{
+	display: inline-block;
+}
+
+.crud_button 
+{
+	display: inline-block;
+	font-weight: bold;
+}
+
+.crud_button_inner
+{ 
+	display: inline-block;
+}
+
+.link
+{
+	cursor: pointer;
+}
+
+.link:hover
+{
+	text-decoration: underline;	
+}
+
+.clasic_link
+{
+	color: #3C89C8;
+	font-weight: normal;
+}
+
+/*CRUD BUTTONS CON ICONS*/
+.crud_button_group.icons
+{
+	margin: 0;
+}
+
+.crud_button_group.icons .crud_button
+{
+	margin-right: 10px;
+}
+
+/*FIN DE CRUD BUTTONS CON ICONS*/
+
+/*CRUD BUTTONS CON SC_BUTTONS*/
+.crud_button_group.sc_buttons
+{
+	margin-right: 4px;
+}
+
+.crud_button_group.sc_buttons .crud_button
+{
+	margin: 0;
+}
+
+.sc_button.link:hover
+{
+	text-decoration: none;	
+}
+
+.crud_button_group.sc_buttons .sc_button
+{
+	border-radius: 0;
+}
+
+.crud_button_group.sc_buttons .sc_button:first-child
+{
+	border-radius: 3px 0 0 3px;
+}
+
+.crud_button_group.sc_buttons .sc_button:last-child
+{
+	border-radius: 0 3px 3px 0;
+}
+
+.crud_button_group.sc_buttons .sc_button:first-child:last-child
+{
+	border-radius: 3px;
+}
+
+/**Paginadores*/
+.sc_button.disabled
+{
+	visibility: visible;
+}
+
+.sc_button.sc_pag_button
+{
+	width: 30px;
+}
+
+.sc_button.sc_pag_button.disabled
+{
+	color: #CACACA;
+	border-color: rgba(0, 0, 0, 0.1);
+	cursor: default;
+}
+
+.sc_button.sc_pag_button.disabled:hover
+{
+	box-shadow: none;
+	border-color: rgba(0, 0, 0, 0.1);
+}
+
+.sc_button.sc_pag_button *
+{
+	width: 100%;
+}
+/*FIN DE CRUD BUTTONS CON SC_BUTTONS*/
+
+.view_separator
+{
+	display: inline-block;
+	margin: 0 15px;
+	color: transparent;
+}
+
+.pag_view
+{
+	display: inline-block;
+	float: right;
+}
+
+.fila_paginador .current
+{
+	color: inherit;
+	cursor: default;
+	font-weight: bold;
+}
+
+.fila_paginador .current:hover
+{
+	text-decoration: none;
+}
+/* Estilos de botones para los iconos con circulo de fugue */
+.crud_button.fugue
+{
+	padding: 7px 0 5px 17px;
+}
+
+.fugue.new
+{
+	background: url("../img/crud/fugue_plus.png") no-repeat scroll 0 center transparent;
+}
+
+.fugue.edit
+{
+	background: url("../img/crud/fugue_pencil.png") no-repeat scroll 0 center transparent;
+}
+
+.fugue.list
+{
+	background: url("../img/crud/fugue_application-list.png") no-repeat scroll 0 center transparent;
+}
+
+.fugue.delete
+{
+	background: url("../img/crud/fugue_cross.png") no-repeat scroll 0 center transparent;
+}
+
+.fugue.excel
+{
+	background: url("../img/crud/fugue_document-excel.png") no-repeat scroll 0 center transparent;
+	padding: 5px 0 5px 16px;
+}
+
+.fugue.pdf
+{
+	background: url("../img/crud/fugue_document-pdf.png") no-repeat scroll 0 center transparent;
+	padding: 5px 0 5px 16px;
+}
+
+/* --------------------------------------------------------------- */
+
+/* Estilos de botones para los iconos de aplicacion de fugue */
+.crud_button.appfugue
+{
+	padding: 5px 0 5px 18px;
+}
+
+.appfugue.new
+{
+	background: url("../img/crud/fugue_application--plus.png") no-repeat scroll 0 center transparent;
+}
+
+.appfugue.edit
+{
+	background: url("../img/crud/fugue_application--pencil.png") no-repeat scroll 0 center transparent;
+}
+
+.appfugue.list
+{
+	background: url("../img/crud/fugue_application-list.png") no-repeat scroll 0 center transparent;
+}
+
+.appfugue.delete
+{
+	background: url("../img/crud/fugue_application--minus.png") no-repeat scroll 0 center transparent;
+}
+
+.appfugue.excel
+{
+	background: url("../img/crud/fugue_document-excel.png") no-repeat scroll 0 center transparent;
+	padding: 5px 0 5px 16px;
+}
+
+.appfugue.pdf
+{
+	background: url("../img/crud/fugue_document-pdf.png") no-repeat scroll 0 center transparent;
+	padding: 5px 0 5px 16px;
+}
+/* --------------------------------------------------------------- */
+
+/* Estilos de botones para los iconos de fugue small */
+.crud_button.smallfugue
+{
+	padding: 5px 0 5px 15px;
+}
+
+.smallfugue.new
+{
+	background: url("../img/crud/fugue_plus-small.png") no-repeat scroll 0 center transparent;
+}
+
+.smallfugue.edit
+{
+	background: url("../img/crud/fugue_pencil-small.png") no-repeat scroll 0 center transparent;
+}
+
+.smallfugue.list
+{
+	background: url("../img/crud/fugue_application-small-list.png") no-repeat scroll 0 center transparent;
+}
+
+.smallfugue.delete
+{
+	background: url("../img/crud/fugue_cross-small.png") no-repeat scroll 0 center transparent;
+}
+
+.smallfugue.excel
+{
+	background: url("../img/crud/fugue_document-excel.png") no-repeat scroll 0 center transparent;
+	padding: 5px 0 5px 16px;
+}
+
+.smallfugue.pdf
+{
+	background: url("../img/crud/fugue_document-pdf.png") no-repeat scroll 0 center transparent;
+	padding: 5px 0 5px 16px;
+}
+
+.smallfugue.clear_filters
+{
+	background: url("../img/crud/fugue_funnel-small.png") no-repeat scroll 0 center transparent;
+	padding: 5px 0 3px 16px;
+}
+/* --------------------------------------------------------------- */
+
+/* Estilos de botones para los iconos de bwpx */
+.crud_button.bwpx
+{
+	padding: 7px 0 5px 19px;
+}
+
+.bwpx.new
+{
+	background: url("../img/crud/bwpx_symbol_addition.gif") no-repeat scroll 0 center transparent;
+}
+
+.bwpx.edit
+{
+	background: url("../img/crud/bwpx_pencil.gif") no-repeat scroll 0 center transparent;
+}
+
+.bwpx.list
+{
+	background: url("../img/crud/bwpx_application_view_list.gif") no-repeat scroll 0 center transparent;
+}
+
+.bwpx.delete
+{
+	background: url("../img/crud/bwpx_trash.gif") no-repeat scroll 0 center transparent;
+}
+
+/* --------------------------------------------------------------- */
+
+/**********PARA SETEAR EL PADDING DE LOS BOTONES****************************/
+
+.sc_crud_top > *
+{	
+	padding: 0 10px;
+}
+
+
+/***FILTROS NO AJAX DEL CRUD***********************************/
+
+.filtros
+{
+	border: 1px solid #D0D0D0;
+    margin: 20px 0;
+    padding: 20px 10px;
+}
+
+.login_form
+{
+	display: inline-block;
+}
+
+td.rejected{
+	color: #B07474;	
+}
+
+div.infobox{
+	background: url("../img/misc/information.png") no-repeat scroll 5px center #DEDEF1;
+    border: 0px solid #999;
+    font-size: 12px;
+    margin: 5px;
+    padding: 10px 10px 10px 24px;
+}
+
+/***El handler para el sortable de los shortcut***/
+.sc_crud_top.sc_button_shortcut.sorting > *{
+	padding: 0 5px;
+}
+
+.sc_crud_top.sc_button_shortcut > img.handle_image{
+	padding: 0 3px;
+}
+
+.sc_crud_top.sc_button_shortcut:hover > img.handle_image{
+}
+
+.sc_button_shortcut img.handle_image{
+	display: none;
+}
+
+.sc_button_shortcut img.handle_image:hover{
+}
+
+.input_delete
+{
+	margin-right: 1px;
+}
+
+.multiplebgs .clean_input
+{
+	background-image: url("../img/form/cross.png"), -webkit-linear-gradient(top, #eee, #ddd, #eee); /* Chrome 10+, Saf5.1+, iOS 5+ */
+	background-image:   url("../img/form/cross.png"), -moz-linear-gradient(top, #eee, #ddd, #eee); /* FF3.6 */
+	background-image:     url("../img/form/cross.png"), -ms-linear-gradient(top, #eee, #ddd, #eee); /* IE10 */
+	background-image:      url("../img/form/cross.png"), -o-linear-gradient(top, #eee, #ddd, #eee); /* Opera 11.10+ */
+	background-image:         url("../img/form/cross.png"), linear-gradient(top, #eee, #ddd, #eee);
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.clean_input
+{
+	background-color: #ddd;
+	background-image: url("../img/form/cross.png");
+	border: 1px solid;
+	border-left:none;
+	border-color: #7C7C7C #C3C3C3 #DDDDDD;
+	height: 19px;
+	width: 18px;
+	padding: 0px;
+	margin-left: -3px;
+	vertical-align: bottom;
+}
+
+.multiplebgs .clean_input:hover
+{
+	background-image: url("../img/form/cross.png"), -webkit-linear-gradient(top, #eee, #f0f0f0, #ccc); /* Chrome 10+, Saf5.1+, iOS 5+ */
+	background-image:   url("../img/form/cross.png"), -moz-linear-gradient(top, #eee, #f0f0f0, #ccc); /* FF3.6 */
+	background-image:     url("../img/form/cross.png"), -ms-linear-gradient(top, #eee, #f0f0f0, #ccc); /* IE10 */
+	background-image:      url("../img/form/cross.png"), -o-linear-gradient(top, #eee, #f0f0f0, #ccc); /* Opera 11.10+ */
+	background-image:         url("../img/form/cross.png"), linear-gradient(top, #eee, #f0f0f0, #ccc);
+}
+
+.clean_input:hover
+{
+	background-color: #eee;
+	cursor: pointer;
+}
+
+.multiplebgs .up_down_minutes
+{
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.up_down_minutes
+{
+	background-color: #ddd;
+	border: 1px solid;
+	border-left:none;
+	border-color: #7C7C7C #C3C3C3 #DDDDDD;
+	height: 19px;
+	width: 18px;
+	padding: 0px;
+	margin-left: -3px;
+	vertical-align: bottom;
+	cursor: pointer;
+}
+
+.multiplebgs .up_minutes
+{
+	background-image: url("../img/form/up.png"), -webkit-linear-gradient(top, #f0f0f0 30%, #fff 5%, #ccc 65%); /* Chrome 10+, Saf5.1+, iOS 5+ */
+	background-image:   url("../img/form/up.png"), -moz-linear-gradient(top, #f0f0f0 30%, #fff 5%, #ccc 65%); /* FF3.6 */
+	background-image:     url("../img/form/up.png"), -ms-linear-gradient(top, #f0f0f0 30%, #fff 5%, #ccc 65%); /* IE10 */
+	background-image:      url("../img/form/up.png"), -o-linear-gradient(top, #f0f0f0 30%, #fff 5%, #ccc 65%); /* Opera 11.10+ */
+	background-image:         url("../img/form/up.png"), linear-gradient(top, #f0f0f0 30%, #fff 5%, #ccc 65%);
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-right-radius: 5px;
+}
+
+.up_minutes
+{
+	background-color: #eee;
+	background-image: url("../img/form/up.png");
+	height: 9px;
+	width: 100%;
+}
+
+.multiplebgs .up_minutes:hover
+{
+	background-image: url("../img/form/up.png"), -webkit-linear-gradient(top, #f0f0f0 30%, #fff 5%, #b3b3b3 65%); /* Chrome 10+, Saf5.1+, iOS 5+ */
+	background-image:   url("../img/form/up.png"), -moz-linear-gradient(top, #f0f0f0 30%, #fff 5%, #b3b3b3 65%); /* FF3.6 */
+	background-image:     url("../img/form/up.png"), -ms-linear-gradient(top, #f0f0f0 30%, #fff 5%, #b3b3b3 65%); /* IE10 */
+	background-image:      url("../img/form/up.png"), -o-linear-gradient(top, #f0f0f0 30%, #fff 5%, #b3b3b3 65%); /* Opera 11.10+ */
+	background-image:         url("../img/form/up.png"), linear-gradient(top, #f0f0f0 30%, #fff 5%, #b3b3b3 65%);
+}
+
+.up_minutes:hover
+{
+	background-color: #e0e0e0;
+}
+
+.multiplebgs .down_minutes
+{
+	background-image: url("../img/form/down.png"), -webkit-linear-gradient(top, #f0f0f0 30%, #fff 5%, #ccc 65%); /* Chrome 10+, Saf5.1+, iOS 5+ */
+	background-image:   url("../img/form/down.png"), -moz-linear-gradient(top, #f0f0f0 30%, #fff 5%, #ccc 65%); /* FF3.6 */
+	background-image:     url("../img/form/down.png"), -ms-linear-gradient(top, #f0f0f0 30%, #fff 5%, #ccc 65%); /* IE10 */
+	background-image:      url("../img/form/down.png"), -o-linear-gradient(top, #f0f0f0 30%, #fff 5%, #ccc 65%); /* Opera 11.10+ */
+	background-image:         url("../img/form/down.png"), linear-gradient(top, #f0f0f0 30%, #fff 5%, #ccc 65%);
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.down_minutes
+{
+	background-color: #eee;
+	background-image: url("../img/form/down.png");
+	height: 9px;
+	width: 100%;
+	margin-top: 1px;
+}
+
+.multiplebgs .down_minutes:hover
+{
+	background-image: url("../img/form/down.png"), -webkit-linear-gradient(top, #f0f0f0 30%, #fff 5%, #b3b3b3 65%); /* Chrome 10+, Saf5.1+, iOS 5+ */
+	background-image:   url("../img/form/down.png"), -moz-linear-gradient(top, #f0f0f0 30%, #fff 5%, #b3b3b3 65%); /* FF3.6 */
+	background-image:     url("../img/form/down.png"), -ms-linear-gradient(top, #f0f0f0 30%, #fff 5%, #b3b3b3 65%); /* IE10 */
+	background-image:      url("../img/form/down.png"), -o-linear-gradient(top, #f0f0f0 30%, #fff 5%, #b3b3b3 65%); /* Opera 11.10+ */
+	background-image:         url("../img/form/down.png"), linear-gradient(top, #f0f0f0 30%, #fff 5%, #b3b3b3 65%);
+}
+
+.down_minutes:hover
+{
+	background-color: #e0e0e0;
+}

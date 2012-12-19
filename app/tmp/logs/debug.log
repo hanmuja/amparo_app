@@ -1,0 +1,79 @@
+
+2012-08-03 18:31:28 Notice: Notice (8): Undefined variable: replSpacesUpload in [/home/cakeprojects/arcade/app/webroot/tools/filemanager/template.inc.php, line 164]
+Trace:
+include_once - APP/webroot/tools/filemanager/template.inc.php, line 164
+FileManager::create() - APP/webroot/tools/filemanager/class/FileManager.php, line 271
+include - APP/View/Filemanagers/index.ctp, line 7
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::render() - CORE/Cake/View/View.php, line 463
+Controller::render() - CORE/Cake/Controller/Controller.php, line 959
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2012-08-03 18:31:28 Notice: Notice (8): Undefined variable: lowerCaseUpload in [/home/cakeprojects/arcade/app/webroot/tools/filemanager/template.inc.php, line 166]
+Trace:
+include_once - APP/webroot/tools/filemanager/template.inc.php, line 166
+FileManager::create() - APP/webroot/tools/filemanager/class/FileManager.php, line 271
+include - APP/View/Filemanagers/index.ctp, line 7
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::render() - CORE/Cake/View/View.php, line 463
+Controller::render() - CORE/Cake/Controller/Controller.php, line 959
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2012-08-03 18:31:28 Notice: Notice (8): Undefined variable: replSpacesUpload in [/home/cakeprojects/arcade/app/webroot/tools/filemanager/template.inc.php, line 193]
+Trace:
+include_once - APP/webroot/tools/filemanager/template.inc.php, line 193
+FileManager::create() - APP/webroot/tools/filemanager/class/FileManager.php, line 271
+include - APP/View/Filemanagers/index.ctp, line 7
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::render() - CORE/Cake/View/View.php, line 463
+Controller::render() - CORE/Cake/Controller/Controller.php, line 959
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2012-08-03 18:31:28 Notice: Notice (8): Undefined variable: lowerCaseUpload in [/home/cakeprojects/arcade/app/webroot/tools/filemanager/template.inc.php, line 195]
+Trace:
+include_once - APP/webroot/tools/filemanager/template.inc.php, line 195
+FileManager::create() - APP/webroot/tools/filemanager/class/FileManager.php, line 271
+include - APP/View/Filemanagers/index.ctp, line 7
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::render() - CORE/Cake/View/View.php, line 463
+Controller::render() - CORE/Cake/Controller/Controller.php, line 959
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2012-08-03 18:31:28 Notice: Notice (8): Undefined variable: replSpacesUpload in [/home/cakeprojects/arcade/app/webroot/tools/filemanager/template.inc.php, line 246]
+Trace:
+include_once - APP/webroot/tools/filemanager/template.inc.php, line 246
+FileManager::create() - APP/webroot/tools/filemanager/class/FileManager.php, line 271
+include - APP/View/Filemanagers/index.ctp, line 7
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::render() - CORE/Cake/View/View.php, line 463
+Controller::render() - CORE/Cake/Controller/Controller.php, line 959
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
+2012-08-03 18:31:28 Notice: Notice (8): Undefined variable: lowerCaseUpload in [/home/cakeprojects/arcade/app/webroot/tools/filemanager/template.inc.php, line 248]
+Trace:
+include_once - APP/webroot/tools/filemanager/template.inc.php, line 248
+FileManager::create() - APP/webroot/tools/filemanager/class/FileManager.php, line 271
+include - APP/View/Filemanagers/index.ctp, line 7
+View::_evaluate() - CORE/Cake/View/View.php, line 908
+View::_render() - CORE/Cake/View/View.php, line 872
+View::render() - CORE/Cake/View/View.php, line 463
+Controller::render() - CORE/Cake/Controller/Controller.php, line 959
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 110
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+[main] - APP/webroot/index.php, line 96
+
