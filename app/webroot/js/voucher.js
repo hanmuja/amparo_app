@@ -1,0 +1,23 @@
+$(document).ready(function(){
+	$("#VoucherNoAplicaLlegada").change(function(){
+		if($(this).is(":checked"))
+		{
+			$("#hora_llegada").hide();
+		}
+		else
+		{
+			$("#hora_llegada").show();
+		}
+	});
+	
+	$("#VoucherNoAplicaSalida").change(function(){
+		if($(this).is(":checked"))
+		{
+			$("#hora_salida").hide();
+		}
+		else
+		{
+			$("#hora_salida").show();
+		}
+	});
+});

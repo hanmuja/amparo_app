@@ -1,5 +1,8 @@
 <?php if(!$is_ajax):?>
     <?php echo $this->Dialog->headers() ?>
+    <?php echo $this->Utils->datepicker_headers(true)?>
+    <?php echo $this->Html->script("ckeditor/ckeditor")?>
+    <?php echo $this->Html->script("ckfinder/ckfinder")?>
     <div id="<?php echo $controller?>">
 <?php endif;?>
 

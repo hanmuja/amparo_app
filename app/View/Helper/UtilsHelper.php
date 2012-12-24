@@ -366,6 +366,13 @@
 			$inicio['children'] = array();
 			
 				$child= array();
+				$child["label"]= __("Crear Voucher");
+				$child["url"]= array("plugin"=>null, "controller"=>"Vouchers", "action"=>"add");
+				//$child["virtual"]= true;
+				$child["children"]= array();
+			$inicio['children'][] = $child;
+			
+				$child= array();
 				$child["label"]= __("Vouchers");
 				$child["url"]= array("plugin"=>null, "controller"=>"Vouchers", "action"=>"index");
 				//$child["virtual"]= true;

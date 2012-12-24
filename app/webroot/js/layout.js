@@ -166,7 +166,7 @@ function initialize_basic_datepicker2(selector)
         $(selector).datepicker
         (
                 { 
-                        dateFormat: "mm-dd-yy",
+                        dateFormat: "dd-mm-yy",
                         changeMonth: true,
                         changeYear: true,
                         yearRange: 'c-5:c+5',

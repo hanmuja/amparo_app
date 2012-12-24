@@ -20,7 +20,7 @@ class VouchersController extends AppController
 		
 		$this->set(compact("model", "controller", "item"));
 		
-		$this->Auth->allowedActions = array('index', 'add', 'edit', 'delete');
+		$this->Auth->allowedActions = array('*');
 	}
 	
 	function index()
@@ -61,23 +61,7 @@ class VouchersController extends AppController
 			if ($this->$model->saveAll($this->request->data))
 			{
 				$this->Utils->flash($item, "success_add");
-				
-				if($this->request->is('ajax'))
-				{
-					//$this->layout= "empty";
-					$this->set("url_redirect", array("plugin"=>null, "controller"=>$controller, "action"=>"index"));
-					$this->set("close", true);
-					$this->render("form");
-					
-					return;
-				}
-				else
-				{
-					/**
-					 * If this wasn't an ajax request, we just redirect to the index, to see the list.
-					 */
-					$this->redirect(array("plugin"=>null, "controller"=>$controller, 'action' => 'index'));
-				}
+				$this->redirect(array("plugin"=>null, "controller"=>$controller, 'action' => 'index'));
 			} 
 			else 
 			{
@@ -96,7 +80,7 @@ class VouchersController extends AppController
 		
 		$this->set("edit", false);
 		
-		$this->render("form");
+		//$this->render("form");
 	}
 	
 	function delete($id)

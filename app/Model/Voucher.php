@@ -94,9 +94,14 @@ class Voucher extends AppModel
 	
 	public function getLastId()
 	{
-		$this->recursive = -1;
-		$last_obj = $this->find('first', array('order' => 'Voucher.id DESC'));
-		return $last_obj['Voucher']['id'];
+		$db = $this->getDataSource();
+		$result = $db->fetchAll(
+		    "SELECT Auto_increment FROM information_schema.tables WHERE table_name='vouchers'"
+		);
+		
+		$return = $result['0']['tables']['Auto_increment'];
+		
+		return $return;
 	}
 
 }

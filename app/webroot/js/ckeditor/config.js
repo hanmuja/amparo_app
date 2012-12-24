@@ -31,9 +31,7 @@ CKEDITOR.editorConfig = function( config )
 		['Source'],
 		['Copy','Paste','PasteText','PasteFromWord','-','SpellChecker'],
 		['Undo','Redo','Find','Replace','RemoveFormat'],
-		['Bold','Italic','Strike','TextColor','BGColor','FontSize'],
 		['NumberedList','BulletedList'],
-		['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
-		['Link','Unlink','Image','Table','HorizontalRule','Smiley','SpecialChar','Maximize']
+		['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock']
 	];
 };
