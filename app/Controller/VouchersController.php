@@ -161,4 +161,14 @@ class VouchersController extends AppController
 		
 		$this->render("form");
 	}
+
+	function charge_provider()
+	{
+		$model="Voucher";
+		
+		$this->$model->Provider->recursive = -1;
+		$provider = $this->$model->Provider->read(null, $this->request->data['provider_id']);
+		echo json_encode($provider);
+		exit;
+	}
 }

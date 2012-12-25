@@ -70,4 +70,30 @@
 
 <?php echo $this->element("ckeditor_setup", array("editor_id"=>"VoucherPasajero"))?>
 <?php echo $this->element("ckeditor_setup", array("editor_id"=>"VoucherServicios"))?>
+
+<script>
+	$(document).ready(function(){
+		cargar_datos_proveedor();
+		
+		$("#VoucherProviderId").change(function(){
+			cargar_datos_proveedor();
+		});
+	});
+	
+	function cargar_datos_proveedor()
+	{
+		var provider_id = $("#VoucherProviderId").val();
+		
+		$.post("<?php echo $this->Html->url(array('plugin' => null, 'controller' => $controller, 'action' => 'charge_provider')) ?>", { "provider_id": provider_id },
+			function(data){
+				console.debug(data.Provider);
+				var provider = data.Provider;
+				$("#AuxElmPresentar").val(provider.nombre);
+				$("#AuxElmTelefonoPrincipal").val(provider.telefono_principal);
+				$("#AuxElmTelefonoSecundario").val(provider.telefono_secundario);
+				$("#AuxElmTelefonoEmergencia").val(provider.telefono_emergencia);
+				$("#AuxElmDireccion").val(provider.direccion);
+			}, "json");
+	}
+</script>
 	
