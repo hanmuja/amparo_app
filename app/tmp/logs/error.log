@@ -16414,3 +16414,65 @@
 #3 /home/cakeprojects/amparo_app/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(VouchersController), Object(CakeRequest), Object(CakeResponse))
 #4 /home/cakeprojects/amparo_app/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2012-12-25 17:06:03 Error: [NotFoundException] Invalid Voucher
+#0 [internal function]: VouchersController->edit()
+#1 /home/cakeprojects/amparo_app/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(VouchersController), Array)
+#2 /home/cakeprojects/amparo_app/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#3 /home/cakeprojects/amparo_app/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(VouchersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/cakeprojects/amparo_app/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-12-25 17:13:02 Error: [NotFoundException] Invalid Voucher
+#0 [internal function]: VouchersController->edit('3')
+#1 /home/cakeprojects/amparo_app/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(VouchersController), Array)
+#2 /home/cakeprojects/amparo_app/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#3 /home/cakeprojects/amparo_app/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(VouchersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/cakeprojects/amparo_app/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-12-25 18:23:36 Error: [MissingControllerException] Controller class VoucherHtmlController could not be found.
+#0 /home/cakeprojects/amparo_app/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-25 18:23:44 Error: [MissingControllerException] Controller class VoucherController could not be found.
+#0 /home/cakeprojects/amparo_app/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-25 18:23:48 Error: [MissingViewException] View file "/home/cakeprojects/amparo_app/app/View/Vouchers/voucher_html.ctp" is missing.
+#0 /home/cakeprojects/amparo_app/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /home/cakeprojects/amparo_app/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /home/cakeprojects/amparo_app/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /home/cakeprojects/amparo_app/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(VouchersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/cakeprojects/amparo_app/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-12-25 18:24:16 Error: [MissingViewException] View file "/home/cakeprojects/amparo_app/app/View/Vouchers/voucher_html.ctp" is missing.
+#0 /home/cakeprojects/amparo_app/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /home/cakeprojects/amparo_app/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /home/cakeprojects/amparo_app/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /home/cakeprojects/amparo_app/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(VouchersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/cakeprojects/amparo_app/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-12-25 18:24:19 Error: [MissingViewException] View file "/home/cakeprojects/amparo_app/app/View/Vouchers/voucher_html.ctp" is missing.
+#0 /home/cakeprojects/amparo_app/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /home/cakeprojects/amparo_app/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /home/cakeprojects/amparo_app/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /home/cakeprojects/amparo_app/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(VouchersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/cakeprojects/amparo_app/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-12-25 21:22:14 Error: [MissingControllerException] Controller class VoucherController could not be found.
+#0 /home/cakeprojects/amparo_app/lib/Cake/Core/Object.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 /home/cakeprojects/amparo_app/app/Controller/VouchersController.php(195): Object->requestAction(Array)
+#2 [internal function]: VouchersController->vistaPrevia('2')
+#3 /home/cakeprojects/amparo_app/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(VouchersController), Array)
+#4 /home/cakeprojects/amparo_app/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#5 /home/cakeprojects/amparo_app/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(VouchersController), Object(CakeRequest), Object(CakeResponse))
+#6 /home/cakeprojects/amparo_app/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2012-12-25 23:02:53 Error: [NotFoundException] Invalid Voucher
+#0 [internal function]: VouchersController->edit('3')
+#1 /home/cakeprojects/amparo_app/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(VouchersController), Array)
+#2 /home/cakeprojects/amparo_app/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#3 /home/cakeprojects/amparo_app/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(VouchersController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/cakeprojects/amparo_app/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-12-26 00:32:51 Error: [MissingActionException] Action ProvidersController::buscar() could not be found.
+#0 /home/cakeprojects/amparo_app/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /home/cakeprojects/amparo_app/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(ProvidersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/cakeprojects/amparo_app/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

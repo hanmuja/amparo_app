@@ -20,7 +20,7 @@ class ProvidersController extends AppController
 		
 		$this->set(compact("model", "controller", "item"));
 		
-		$this->Auth->allowedActions = array('index', 'add', 'edit', 'delete');
+		$this->Auth->allowedActions = array('*');
 	}
 	
 	function index()
@@ -43,6 +43,26 @@ class ProvidersController extends AppController
 		
 		//Send the list of equipment to the view and the value of paginated.
        $this->set(compact("paginated", "all"));
+	}
+	
+	function buscar($render_div="yes")
+	{
+		$model= "Provider";
+		$controller= "Providers";
+		$item= __("Proveedor");   
+		
+		$conditions= $this->CustomTable->get_conditions($controller);
+		
+		$this->Paginator->settings= array($model=>array("order"=>array("$model.name"=>"asc")));
+		
+		$paginated= $this->CustomTable->isPaginated();
+		
+		$this->$model->recursive = -1;
+                
+		$all= $this->paginate($conditions);
+		
+		//Send the list of equipment to the view and the value of paginated.
+       $this->set(compact("paginated", "all", "render_div"));
 	}
 
 	function add()

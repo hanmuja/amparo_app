@@ -25,7 +25,7 @@
 		$button["html_options"]= $options;
 		$button["url"]= array("plugin"=>null, "controller"=>$controller, "action"=>"add");
 		$button["label"]= $this->Html->image('crud/small/plus.png', array('align'=>'absmiddle'));
-		$table_actions[]= $button;
+		//$table_actions[]= $button;
 		
 		$ths= array();
 		$ths[]= array("label"=>ACTIONS_LABEL);
@@ -40,6 +40,7 @@
 		$ths[]= array("label"=>__("Ruta Salida"), "sortable"=> true, "filterable"=> true, "field"=>"$model.ruta_salida");
 		$ths[]= array("label"=>__("Vuelo Llegada"), "sortable"=> true, "filterable"=> true, "field"=>"$model.vuelo_llegada");
 		$ths[]= array("label"=>__("Vuelo Salida"), "sortable"=> true, "filterable"=> true, "field"=>"$model.vuelo_salida");
+		$ths[]= array("label"=>__("Impreso?"), "sortable"=> true, "filterable"=> false, "field"=>"$model.vuelo_salida");
     }
 		
 	$trs= array();
@@ -53,40 +54,27 @@
 		$dialog_options["width"]= 615;
 		
 		$options= array();
+		$options["escape"]= false;
 		$button_up= array();
 		$button_up["class"]= "edit link crud_button ".CRUD_THEME." sc_button_gray sc_button_image_22";
-		$button_up["dialog_options"]= $dialog_options;
+		//$button_up["dialog_options"]= $dialog_options;
 		$button_up["html_options"]= $options;
 		$button_up["url"]= array("plugin"=>null, "controller"=>$controller, "action"=>"edit", $one[$model]["id"]);
 		$button_up["label"]= $this->Html->image('crud/edit.gif', array('align'=>'absmiddle'));
 		
-		/////////////
-		/**
-		 * The "Delete" button
-		 */
+		$button_edit= array();
+		$button_edit["class"]= "edit link crud_button ".CRUD_THEME." sc_button_gray sc_button_image_22";
+		$options= array();
+		$options["escape"]= false;
+		$button_edit["inner_html"]= $this->Form->postLink($this->Html->image('crud/edit.gif', array("align"=>"absmiddle")), array("plugin"=>null, "controller"=>$controller, "action"=>"edit", $one[$model]["id"]), $options);
+		$button_edit["permission_url"]= array("plugin"=>null, "controller"=>$controller, "action"=>"edit");
+		
 		$button_del= array();
 		$button_del["class"]= "delete link crud_button ".CRUD_THEME." sc_button_gray sc_button_image_22";
-		
-		/**
-		 * In  most cases we just need to send the URL and the CustomTable helper will know if the button
-		 * is to create a regular link or to launch a dialog.
-		 * But sometimes we need the button contents to be something especific, something we know exactly.
-		 * In such cases we use the inner_html option.
-		 * For example, in this case we need a post link, so we send such post link as the inner_html and the helper
-		 * will just put it inside the button.
-		 */
 		$options= array();
 		$options["escape"]= false;
 		$confirm= __('Are you sure you want to delete this %s from the database?', $item);
 		$button_del["inner_html"]= $this->Form->postLink($this->Html->image(DELETE_IMAGE, array("align"=>"absmiddle")), array("plugin"=>null, "controller"=>$controller, "action"=>"delete", $one[$model]["id"]), $options, $confirm);
-        
-		/**
-		 * As we just see, we sent the inner_html to the button, so we don't sent any URL.
-		 * In the regular cases, the helper decides if show or not show the button, according to the permissions
-		 * the current user has over the sent URL. But in this case we have not URL.
-		 * We need to send the permission URL explicit, so we send it in the next option.
-		 * In this case, this button will be showed only if the current user has permissions to delete an EquipmentType
-		 */
 		$button_del["permission_url"]= array("plugin"=>null, "controller"=>$controller, "action"=>"delete");
 		
 		$actions_buttons= $this->CustomTable->button_group(array($button_up, $button_del));
@@ -98,12 +86,13 @@
 		$tr[]= $one["Seller"]["nombre"];
 		$tr[]= date('Y-m-d', $one[$model]["fecha"]);
 		$tr[]= $one["Provider"]["nombre"];
-		$tr[]= date('Y-m-d H:i:s', $one[$model]["dia_llegada"]);
-		$tr[]= date('Y-m-d H:i:s', $one[$model]["dia_salida"]);
+		$tr[]= date('Y-m-d H:i', $one[$model]["dia_llegada"]);
+		$tr[]= date('Y-m-d H:i', $one[$model]["dia_salida"]);
 		$tr[]= $one[$model]["ruta_llegada"];
 		$tr[]= $one[$model]["ruta_salida"];
 		$tr[]= $one[$model]["vuelo_llegada"];
 		$tr[]= $one[$model]["vuelo_salida"];
+		$tr[]= $one[$model]["impreso"] ? "Si" : "No";
 		$trs[]= $tr;
 	}
 	

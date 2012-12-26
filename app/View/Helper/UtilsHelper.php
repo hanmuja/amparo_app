@@ -373,6 +373,14 @@
 			$inicio['children'][] = $child;
 			
 				$child= array();
+				$child["label"]= __("Editar Voucher");
+				$child["url"]= array("plugin"=>null, "controller"=>"Vouchers", "action"=>"edit");
+				$child["virtual"]= true;
+				$child["show_tab_on_selected"]= true;
+				$child["children"]= array();
+			$inicio['children'][] = $child;
+			
+				$child= array();
 				$child["label"]= __("Vouchers");
 				$child["url"]= array("plugin"=>null, "controller"=>"Vouchers", "action"=>"index");
 				//$child["virtual"]= true;
