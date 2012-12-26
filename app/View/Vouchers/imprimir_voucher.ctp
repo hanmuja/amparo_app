@@ -1,7 +1,7 @@
 <?php 
 App::import('Vendor','xtcpdf');  
 $tcpdf = new XTCPDF(); 
-$textfont = 'freesans'; // looks better, finer, and more condensed than 'dejavusans' 
+$textfont = 'dejavusansi'; // looks better, finer, and more condensed than 'dejavusans' 
 
 $tcpdf->SetAuthor("my author"); 
 $tcpdf->SetAutoPageBreak( true ); 
@@ -16,7 +16,7 @@ $tcpdf->AddPage();
 // Now you position and print your page content 
 // example:  
 $tcpdf->SetTextColor(0, 0, 0); 
-$tcpdf->SetFont($textfont,'',8); 
+$tcpdf->SetFont($textfont,'I',8); 
 
 $tcpdf->writeHTML($html, true, false, true, false, '');
 

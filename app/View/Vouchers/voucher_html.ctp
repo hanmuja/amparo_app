@@ -1,55 +1,63 @@
 <table style="width: 100%;" cellspacing="0" cellpadding="5">
 	<tr>
-		<td style="border-bottom: 4px solid black;">
-			<?php echo $this->Html->image("http://amparo_app/img/logo_amparo_app.png", array('width' => '250px')) ?>
-			<br />
-			<?php echo $this->Html->link('ampa@prodigy.net.mx', 'mailto:ampa@prodigy.net.mx') ?>
-			<br />
-			<?php echo $this->Html->link('www.amparo.com.mx', 'http://www.amparo.com.mx')?>
-		</td>
-		<td style="border-bottom: 4px solid black;" valign="bottom">
+		<td colspan="3" style="border-bottom: 4px solid black;">
 			<table style="width: 100%;" cellspacing="0" cellpadding="5">
 				<tr>
-					<td>&nbsp;</td>
-				</tr>
-				<tr>
-					<td>
-						Monte Hermon 109
+					<td align="center">
+						<?php echo $this->Html->image("http://amparo_app/img/logo_amparo_app.png", array('width' => '250px')) ?>
 						<br />
-						Col. Lomas de Chapultepec
+						<?php echo $this->Html->link('ampa@prodigy.net.mx', 'mailto:ampa@prodigy.net.mx') ?>
 						<br />
-						11000 México, D.F.
-						<br />
-						Tels. (+52 55)5258-0311 Fax (+52 55)5258-0308
+						<?php echo $this->Html->link('www.amparo.com.mx', 'http://www.amparo.com.mx')?>
 					</td>
-				</tr>
-			</table>
-		</td>
-		<td style="border-bottom: 4px solid black;">
-			<table style="width: 100%;" cellspacing="0" cellpadding="5">
-				<tr>
-					<td style="border-top: 4px solid black; border-bottom: 4px solid black;">
-						<b>Vendedor</b>
-						<br />
-						Issued by
+					<td valign="bottom">
+						<table style="width: 100%;" cellspacing="0" cellpadding="5">
+							<tr>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<td>
+									Monte Hermon 109
+									<br />
+									Col. Lomas de Chapultepec
+									<br />
+									11000 México, D.F.
+									<br />
+									Tel. (+52 55) 5258-0311
+									<br />
+									Fax (+52 55) 5258-0308
+								</td>
+							</tr>
+						</table>
 					</td>
-					<td style="border-top: 4px solid black; border-bottom: 4px solid black;">
-						<?php echo $voucher['Seller']['nombre']." ".$voucher['Seller']['primer_apellido']." ".$voucher['Seller']['segundo_apellido'] ?>
+					<td valign="bottom">
+						<table style="width: 100%;" cellspacing="0" cellpadding="5">
+							<tr>
+								<td style="border-top: 4px solid black; border-bottom: 4px solid black;">
+									<b>Vendedor</b>
+									<br />
+									Issued by
+								</td>
+								<td style="border-top: 4px solid black; border-bottom: 4px solid black;">
+									<?php echo $voucher['Seller']['nombre']." ".$voucher['Seller']['primer_apellido']." ".$voucher['Seller']['segundo_apellido'] ?>
+								</td>
+							</tr>
+							<tr>
+								<td><b>Voucher</b></td>
+								<td><?php echo str_pad($voucher[$model]["id"], 4, 0, STR_PAD_LEFT); ?></td>
+							</tr>
+							<tr>
+								<td style="border-bottom: 4px solid black;"><b>Date</b></td>
+								<td style="border-bottom: 4px solid black;"><?php echo date('d-M-Y', $voucher[$model]['fecha']) ?></td>
+							</tr>
+						</table>
 					</td>
-				</tr>
-				<tr>
-					<td><b>Voucher</b></td>
-					<td><?php echo str_pad($voucher[$model]["id"], 4, 0, STR_PAD_LEFT); ?></td>
-				</tr>
-				<tr>
-					<td style="border-bottom: 4px solid black;"><b>Date</b></td>
-					<td style="border-bottom: 4px solid black;"><?php echo date('d-M-Y', $voucher[$model]['fecha']) ?></td>
 				</tr>
 			</table>
 		</td>
 	</tr>
 	<tr>
-		<td style="border-bottom: 4px solid black;">
+		<td style="border-bottom: 4px solid black;" width="100">
 			<b>Presentar a</b>
 			<br />
 			Please Present to
@@ -99,16 +107,18 @@
 		</td>
 	</tr>
 	<tr>
-		<td valign="top" style="border-bottom: 4px solid black;">
-			<b>Servicios a proporcionar</b>
-			<br />
-			Please provide following services
-		</td>
-		<td valign="top" colspan="2" style="border-bottom: 4px solid black;">
-			<?php echo $voucher[$model]['servicios'] ?>
-			<br />
-			<br />
-			END OF SERVICES
+		<td colspan="3" valign="top" style="border-bottom: 4px solid black;">
+			<p>
+				<b>Servicios a proporcionar</b>
+				<br />
+				Please provide following services
+			</p>
+			<p>
+				<?php echo $voucher[$model]['servicios'] ?>
+				<br />
+				<br />
+				END OF SERVICES
+			</p>
 		</td>
 	</tr>
 	<tr>

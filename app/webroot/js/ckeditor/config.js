@@ -11,6 +11,8 @@ CKEDITOR.editorConfig = function( config )
 	
 	config.enterMode = CKEDITOR.ENTER_BR;
 	config.toolbarCanCollapse = false;
+	config.tabSpaces = 5;
+	config.tabShow = true;
 	
 	//config.toolbar = 'basic';
 	
@@ -32,6 +34,7 @@ CKEDITOR.editorConfig = function( config )
 		['Copy','Paste','PasteText','PasteFromWord','-','SpellChecker'],
 		['Undo','Redo','Find','Replace','RemoveFormat'],
 		['Outdent','Indent','NumberedList','BulletedList'],
-		['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock']
+		['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
+		['Table']
 	];
 };
