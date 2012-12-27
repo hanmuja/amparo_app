@@ -144,8 +144,8 @@
 		</td>
 	</tr>
 	<tr>
-		<td colspan="3" style="border-bottom: 1px solid black;">
-			<table style="width: 100%;" cellspacing="0" cellpadding="0" height="100">
+		<td colspan="3" style="border-bottom: 1px solid black;" valign="center">
+			<table style="width: 100%;" cellspacing="0" cellpadding="10">
 				<tr>
 					<td style="border-bottom: 1px solid black;">
 						<b>Llegada</b>
