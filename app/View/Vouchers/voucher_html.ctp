@@ -50,6 +50,10 @@
 								<td style="border-bottom: 2px solid black;"><b>Date</b></td>
 								<td style="border-bottom: 2px solid black;"><?php echo date('d-M-Y', $voucher[$model]['fecha']) ?></td>
 							</tr>
+							<tr>
+								<td style="border-bottom: 2px solid black;"><b>Reservation</b></td>
+								<td style="border-bottom: 2px solid black;"><?php echo $voucher[$model]['clave'] ?></td>
+							</tr>
 						</table>
 					</td>
 				</tr>
@@ -57,7 +61,7 @@
 		</td>
 	</tr>
 	<tr>
-		<td colspan="3" style="border-bottom: 2px solid black;">
+		<td colspan="3" style="border-bottom: 1px solid black;">
 			<table style="width: 100%;" cellspacing="0" cellpadding="5">
 				<tr>
 					<td width="100">
@@ -73,7 +77,7 @@
 		</td>
 	</tr>
 	<tr>
-		<td colspan="3" style="border-bottom: 2px solid black;">
+		<td colspan="3" style="border-bottom: 1px solid black;">
 			<table style="width: 100%;" cellspacing="0" cellpadding="5">
 				<tr>
 					<td valign="top" width="80">
@@ -109,7 +113,7 @@
 		</td>
 	</tr>
 	<tr>
-		<td colspan="3" style="border-bottom: 2px solid black;">
+		<td colspan="3" style="border-bottom: 1px solid black;">
 			<table style="width: 100%;" cellspacing="0" cellpadding="5">
 				<tr>
 					<td valign="top" width="80">
@@ -125,7 +129,7 @@
 		</td>
 	</tr>
 	<tr>
-		<td colspan="3" valign="top" style="border-bottom: 2px solid black;">
+		<td colspan="3" valign="top" style="border-bottom: 1px solid black;">
 			<p>
 				<b>Servicios a proporcionar</b>
 				<br />
@@ -140,33 +144,33 @@
 		</td>
 	</tr>
 	<tr>
-		<td colspan="3" style="border-bottom: 2px solid black;">
-			<table style="width: 100%;" cellspacing="0" cellpadding="0">
+		<td colspan="3" style="border-bottom: 1px solid black;">
+			<table style="width: 100%;" cellspacing="0" cellpadding="0" height="100">
 				<tr>
-					<td style="border-bottom: 2px solid black;">
+					<td style="border-bottom: 1px solid black;">
 						<b>Llegada</b>
 						<br />
 						Arrival
 					</td>
-					<td style="border-bottom: 2px solid black;"><?php echo date('d-M-Y', $voucher[$model]['dia_llegada']) ?></td>
-					<td style="border-bottom: 2px solid black;">
+					<td style="border-bottom: 1px solid black;"><?php echo date('d-M-Y', $voucher[$model]['dia_llegada']) ?></td>
+					<td style="border-bottom: 1px solid black;">
 						<b>Vuelo</b>
 						<br />
 						Flight
 					</td>
-					<td style="border-bottom: 2px solid black;"><?php echo $voucher[$model]['vuelo_llegada'] ?></td>
-					<td style="border-bottom: 2px solid black;">
+					<td style="border-bottom: 1px solid black;"><?php echo $voucher[$model]['vuelo_llegada'] ?></td>
+					<td style="border-bottom: 1px solid black;">
 						<b>Ruta</b>
 						<br />
 						Route
 					</td>
-					<td style="border-bottom: 2px solid black;"><?php echo $voucher[$model]['ruta_llegada'] ?></td>
-					<td style="border-bottom: 2px solid black;">
+					<td style="border-bottom: 1px solid black;"><?php echo $voucher[$model]['ruta_llegada'] ?></td>
+					<td style="border-bottom: 1px solid black;">
 						<b>Hora</b>
 						<br />
 						Time
 					</td>
-					<td style="border-bottom: 2px solid black;"><?php echo date('H:i', $voucher[$model]['dia_llegada']) ?></td>
+					<td style="border-bottom: 1px solid black;"><?php echo date('H:i', $voucher[$model]['dia_llegada']) ?></td>
 				</tr>
 				<tr>
 					<td>
