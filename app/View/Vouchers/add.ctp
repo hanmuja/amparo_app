@@ -16,7 +16,8 @@
 	<?php echo $this->Form->input($model.".fecha_s", array('label' => 'Fecha', 'type' => 'text', 'size' => '10', 'default' => date('d-m-Y'), "div"=>array("class"=>"input text two_column input_delete")))?>
 	<?php echo $this->Utils->empty_div_row() ?>
 	<?php echo $this->Form->input($model.'.seller_id', array('label' => __("Vendedor"), 'div' => array('class' => 'input select two_column')));?>
-	<?php echo $this->Form->input($model.'.clave', array('size' => '50', 'div' => array('class' => 'input text two_column')));?>
+	<?php echo $this->Utils->empty_div_row() ?>
+	<?php echo $this->Form->input($model.'.clave', array('label' => 'Reservaci&oacute;n', 'size' => '50', 'div' => array('class' => 'input text two_column')));?>
 	
 	<?php echo $this->Utils->form_section("Proveedor") ?>
 	<?php echo $this->Form->input($model.'.provider_id', array('label' => __("Proveedor"), 'div' => array('class' => 'input select two_column')));?>
@@ -55,14 +56,14 @@
 	<?php echo $this->Form->input($model.'.ruta_llegada', array('label' => 'Ruta', 'div' => array('class' => 'input text two_column')));?>
 	<?php echo $this->Form->input($model.'.vuelo_llegada', array('label' => 'Vuelo', 'div' => array('class' => 'input text two_column')));?>
 	<?php echo $this->Form->input($model.".hora_llegada_s", array("label"=>__("Hora"), 'size' => '8', "div"=>array("id" => "hora_llegada", "class"=>"input text two_column"))) ?>
-	<?php echo $this->Form->input($model.".no_aplica_llegada", array("label"=>__('No Aplica Hora?'), 'type'=>'checkbox', "div"=>array("class"=>"input text two_column check_inline")));?>
+	<?php echo $this->Form->input($model.".no_aplica_llegada", array("label"=>__('No Aplica Hora'), 'type'=>'checkbox', "div"=>array("class"=>"input text two_column check_inline")));?>
 	
 	<?php echo $this->Utils->form_section("Salida") ?>
 	<?php echo $this->Form->input($model.'.dia_salida_s', array('label' => 'Dia', 'type' => 'text', 'size' => '10', 'div' => array('class' => 'input text two_column input_delete')));?>
 	<?php echo $this->Form->input($model.'.ruta_salida', array('label' => 'Ruta', 'div' => array('class' => 'input text two_column')));?>
 	<?php echo $this->Form->input($model.'.vuelo_salida', array('label' => 'Vuelo', 'div' => array('class' => 'input text two_column')));?>
 	<?php echo $this->Form->input($model.".hora_salida_s", array("label"=>__("Hora"), 'size' => '8', "div"=>array("id" => "hora_salida", "class"=>"input text two_column"))) ?>
-	<?php echo $this->Form->input($model.".no_aplica_salida", array("label"=>__('No Aplica Hora?'), 'type'=>'checkbox', "div"=>array("class"=>"input text two_column check_inline")));?>
+	<?php echo $this->Form->input($model.".no_aplica_salida", array("label"=>__('No Aplica Hora'), 'type'=>'checkbox', "div"=>array("class"=>"input text two_column check_inline")));?>
 	
 	<?php echo $this->Utils->form_separator();?>
 	<?php if($is_ajax):?>

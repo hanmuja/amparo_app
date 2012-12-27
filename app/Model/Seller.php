@@ -8,7 +8,7 @@ App::uses('AppModel', 'Model');
  */
 class Seller extends AppModel 
 {
-	public $displayField= "nombre";
+	public $displayField= "fullname";
 	
 	//public $actsAs = array('Acl' => array('type' => 'requester'), "Containable");
 /**
@@ -46,5 +46,9 @@ class Seller extends AppModel
 			),
 		);
 	}
+	
+	public $virtualFields = array(
+    	'fullname' => 'CONCAT(Seller.nombre, " ", Seller.primer_apellido, " ", Seller.segundo_apellido)'
+	);
 
 }

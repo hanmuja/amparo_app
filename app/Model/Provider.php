@@ -24,16 +24,6 @@ class Provider extends AppModel
 
 		$this->validate = array
 		(
-			'clave' => array(
-				'notempty' => array(
-					'rule' => array('notempty'),
-					'message' => __('Ingrese la Clave.'),
-					//'allowEmpty' => false,
-					//'required' => false,
-					//'last' => false, // Stop validation after this rule
-					//'on' => 'create', // Limit validation to 'create' or 'update' operations
-				)
-			),
 			'nombre' => array(
 				'notempty' => array(
 					'rule' => array('notempty'),

@@ -39,7 +39,7 @@
 									Issued by
 								</td>
 								<td style="border-top: 4px solid black; border-bottom: 4px solid black;">
-									<?php echo $voucher['Seller']['nombre']." ".$voucher['Seller']['primer_apellido']." ".$voucher['Seller']['segundo_apellido'] ?>
+									<?php echo $voucher['Seller']['fullname'] ?>
 								</td>
 							</tr>
 							<tr>

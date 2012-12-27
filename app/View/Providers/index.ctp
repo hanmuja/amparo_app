@@ -26,7 +26,6 @@
 		
 		$ths= array();
 		$ths[]= array("label"=>ACTIONS_LABEL);
-		$ths[]= array("label"=>__("Clave"), "sortable"=> true, "filterable"=> true, "field"=>"$model.clave");
 		$ths[]= array("label"=>__("Nombre"), "sortable"=> true, "filterable"=> true, "field"=>"$model.nombre");
 		$ths[]= array("label"=>__("Telefono Principal"), "sortable"=> true, "filterable"=> true, "field"=>"$model.telefono_principal");
 		$ths[]= array("label"=>__("Fax"), "sortable"=> true, "filterable"=> true, "field"=>"$model.fax");
@@ -83,7 +82,6 @@
 		
 		$tr[]= array($actions_buttons, array("class"=>"actions", "width"=>"100px"));		
 		
-		$tr[]= $one[$model]["clave"];
 		$tr[]= $one[$model]["nombre"];
 		$tr[]= $one[$model]["telefono_principal"];
 		$tr[]= $one[$model]["fax"];

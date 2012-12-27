@@ -22,7 +22,6 @@
 
 <?php echo $this->Form->create($model, array('type' => 'file'));?>
 	<?php echo $this->Form->input($model.".id")?>
-	<?php echo $this->Form->input($model.'.clave', array('size' => '50'));?>
 	<?php echo $this->Form->input($model.'.nombre', array('size' => '50'));?>
 	<?php echo $this->Form->input($model.'.direccion', array('size' => '50'));?>
 	<?php echo $this->Form->input($model.'.telefono_principal', array('size' => '50'));?>
