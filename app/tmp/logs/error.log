@@ -16476,3 +16476,16 @@
 #1 /home/cakeprojects/amparo_app/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(ProvidersController), Object(CakeRequest), Object(CakeResponse))
 #2 /home/cakeprojects/amparo_app/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2012-12-26 20:57:23 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Seller.nombre apellido' in 'field list'
+#0 /home/cakeprojects/amparo_app/lib/Cake/Model/Datasource/DboSource.php(437): PDOStatement->execute(Array)
+#1 /home/cakeprojects/amparo_app/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('SELECT `Seller`...', Array)
+#2 /home/cakeprojects/amparo_app/lib/Cake/Model/Datasource/DboSource.php(647): DboSource->execute('SELECT `Seller`...', Array, Array)
+#3 /home/cakeprojects/amparo_app/lib/Cake/Model/Datasource/DboSource.php(1058): DboSource->fetchAll('SELECT `Seller`...', false)
+#4 /home/cakeprojects/amparo_app/lib/Cake/Model/Model.php(2653): DboSource->read(Object(Seller), Array)
+#5 /home/cakeprojects/amparo_app/app/Controller/VouchersController.php(76): Model->find('list', Array)
+#6 [internal function]: VouchersController->add()
+#7 /home/cakeprojects/amparo_app/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(VouchersController), Array)
+#8 /home/cakeprojects/amparo_app/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#9 /home/cakeprojects/amparo_app/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(VouchersController), Object(CakeRequest), Object(CakeResponse))
+#10 /home/cakeprojects/amparo_app/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
