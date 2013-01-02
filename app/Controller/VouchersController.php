@@ -72,6 +72,19 @@ class VouchersController extends AppController
 				$this->Utils->flash($item, "error_add");
 			}
 		}
+		else
+		{
+			$texto = '<table border="0" cellpadding="1" cellspacing="1" style="width: 600px;"><tbody>';
+			$i = 0;
+			while($i<10)
+			{
+				$texto.='<tr><td style="vertical-align: top; width: 80px;">&nbsp;</td><td>&nbsp;</td></tr>';
+				$i++;
+			}
+			$texto.='</tbody></table>';
+			
+			$this->request->data[$model]['servicios'] = $texto; 
+		}
 		
 		$sellers = $this->$model->Seller->find('list', array('order' => 'Seller.nombre'));
 		$providers = $this->$model->Provider->find('list', array('order' => 'Provider.nombre'));

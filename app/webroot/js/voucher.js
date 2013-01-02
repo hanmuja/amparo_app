@@ -1,18 +1,18 @@
 $(document).ready(function(){
-	check_horas_llegada();
-	check_horas_salida();
+	check_horas_llegada("#VoucherNoAplicaLlegada");
+	check_horas_salida("#VoucherNoAplicaSalida");
 	$("#VoucherNoAplicaLlegada").change(function(){
-		check_horas_llegada();
+		check_horas_llegada(this);
 	});
 	
 	$("#VoucherNoAplicaSalida").change(function(){
-		check_horas_salida();
+		check_horas_salida(this);
 	});
 });
 
-function check_horas_llegada()
+function check_horas_llegada(objeto)
 {
-	if($(this).is(":checked"))
+	if($(objeto).is(":checked"))
 	{
 		$("#VoucherHoraLlegadaS").val("00:00");
 		$("#hora_llegada").hide();
@@ -23,9 +23,9 @@ function check_horas_llegada()
 	}
 }
 
-function check_horas_salida()
+function check_horas_salida(objeto)
 {
-	if($(this).is(":checked"))
+	if($(objeto).is(":checked"))
 	{
 		$("#VoucherHoraSalidaS").val("00:00");
 		$("#hora_salida").hide();

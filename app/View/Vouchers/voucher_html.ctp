@@ -33,12 +33,12 @@
 					<td valign="bottom">
 						<table style="width: 100%;" cellspacing="0" cellpadding="5">
 							<tr>
-								<td style="border-top: 2px solid black; border-bottom: 2px solid black;">
+								<td style="border-top: 1px solid black; border-bottom: 1px solid black;">
 									<b>Vendedor</b>
 									<br />
 									Issued by
 								</td>
-								<td style="border-top: 2px solid black; border-bottom: 2px solid black;">
+								<td style="border-top: 1px solid black; border-bottom: 1px solid black;">
 									<?php echo $voucher['Seller']['fullname'] ?>
 								</td>
 							</tr>
@@ -47,12 +47,12 @@
 								<td><?php echo str_pad($voucher[$model]["id"], 4, 0, STR_PAD_LEFT); ?></td>
 							</tr>
 							<tr>
-								<td style="border-bottom: 2px solid black;"><b>Date</b></td>
-								<td style="border-bottom: 2px solid black;"><?php echo date('d-M-Y', $voucher[$model]['fecha']) ?></td>
+								<td style="border-bottom: 1px solid black;"><b>Date</b></td>
+								<td style="border-bottom: 1px solid black;"><?php echo date('d-M-Y', $voucher[$model]['fecha']) ?></td>
 							</tr>
 							<tr>
-								<td style="border-bottom: 2px solid black;"><b>Reservation</b></td>
-								<td style="border-bottom: 2px solid black;"><?php echo $voucher[$model]['clave'] ?></td>
+								<td style="border-bottom: 1px solid black;"><b>Reservation</b></td>
+								<td style="border-bottom: 1px solid black;"><?php echo $voucher[$model]['clave'] ?></td>
 							</tr>
 						</table>
 					</td>
@@ -144,7 +144,7 @@
 		</td>
 	</tr>
 	<tr>
-		<td colspan="3" style="border-bottom: 1px solid black;" valign="center">
+		<td colspan="3" style="border-bottom: 2px solid black;" valign="center">
 			<table style="width: 100%;" cellspacing="0" cellpadding="10">
 				<tr>
 					<td style="border-bottom: 1px solid black;">
